@@ -916,4 +916,124 @@ class Player extends Model
         $this->oneDayRestPlusminus = $stats;
     }
 
+    public function setTwoDayRestWins($stats)
+    {
+        $this->twoDayRestWins = $stats;
+    }
+
+    public function setTwoDayRestLosses($stats)
+    {
+        $this->twoDayRestLosses = $stats;
+    }
+
+    public function setTwoDayRestMin($stats)
+    {
+        $this->twoDayRestMin = $stats;
+    }
+
+    public function setTwoDayRestFgm($stats)
+    {
+        $this->twoDayRestFgm = $stats;
+    }
+
+    public function setTwoDayRestFga($stats)
+    {
+        $this->twoDayRestFga = $stats;
+    }
+
+    public function setTwoDayRestFgpct($stats)
+    {
+        $this->twoDayRestFgpct = $stats;
+    }
+
+    public function setTwoDayRestFg3m($stats)
+    {
+        $this->twoDayRestFgm = $stats;
+    }
+
+    public function setTwoDayRestFg3a($stats)
+    {
+        $this->twoDayRestFga = $stats;
+    }
+
+    public function setTwoDayRestFg3pct($stats)
+    {
+        $this->twoDayRestFgpct = $stats;
+    }
+
+    public function setTwoDayRestFtm($stats)
+    {
+        $this->twoDayRestFtm = $stats;
+    }
+
+    public function setTwoDayRestFta($stats)
+    {
+        $this->twoDayRestFta = $stats;
+    }
+
+    public function setTwoDayRestFtpct($stats)
+    {
+        $this->twoDayRestFtpct = $stats;
+    }
+
+    public function setTwoDayRestOreb($stats)
+    {
+        $this->twoDayRestOreb = $stats;
+    }
+
+    public function setTwoDayRestDreb($stats)
+    {
+        $this->twoDayRestDreb = $stats;
+    }
+
+    public function setTwoDayRestReb($stats)
+    {
+        $this->twoDayRestReb = $stats;
+    }
+
+    public function setTwoDayRestAst($stats)
+    {
+        $this->twoDayRestAst = $stats;
+    }
+
+    public function setTwoDayRestTov($stats)
+    {
+        $this->twoDayRestTov = $stats;
+    }
+
+    public function setTwoDayRestStl($stats)
+    {
+        $this->twoDayRestStl = $stats;
+    }
+
+    public function setTwoDayRestBlk($stats)
+    {
+        $this->twoDayRestBlk = $stats;
+    }
+
+    public function setTwoDayRestBlka($stats)
+    {
+        $this->twoDayRestBlka = $stats;
+    }
+
+    public function setTwoDayRestPf($stats)
+    {
+        $this->twoDayRestPf = $stats;
+    }
+
+    public function setTwoDayRestPfd($stats)
+    {
+        $this->twoDayRestPfd = $stats;
+    }
+
+    public function setTwoDayRestPts($stats)
+    {
+        $this->twoDayRestPts = $stats;
+    }
+
+    public function setTwoDayRestPlusminus($stats)
+    {
+        $this->twoDayRestPlusminus = $stats;
+    }
+
 }

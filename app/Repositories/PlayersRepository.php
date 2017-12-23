@@ -318,6 +318,31 @@ class PlayersRepository
         $player->setOneDayRestPts($rest1[26]);
         $player->setOneDayRestPlusminus($rest1[27]);
 
+        $player->setTwoDayRestWins($rest2[3]);
+        $player->setTwoDayRestLosses($rest2[4]);
+        $player->setTwoDayRestMin($rest2[6]);
+        $player->setTwoDayRestFgm($rest2[7]);
+        $player->setTwoDayRestFga($rest2[8]);
+        $player->setTwoDayRestFgpct($rest2[9]);
+        $player->setTwoDayRestFg3m($rest2[10]);
+        $player->setTwoDayRestFg3a($rest2[11]);
+        $player->setTwoDayRestFg3pct($rest2[12]);
+        $player->setTwoDayRestFtm($rest2[13]);
+        $player->setTwoDayRestFta($rest2[14]);
+        $player->setTwoDayRestFtpct($rest2[15]);
+        $player->setTwoDayRestOreb($rest2[16]);
+        $player->setTwoDayRestDreb($rest2[17]);
+        $player->setTwoDayRestReb($rest2[18]);
+        $player->setTwoDayRestAst($rest2[19]);
+        $player->setTwoDayRestTov($rest2[20]);
+        $player->setTwoDayRestStl($rest2[21]);
+        $player->setTwoDayRestBlk($rest2[22]);
+        $player->setTwoDayRestBlka($rest2[23]);
+        $player->setTwoDayRestPf($rest2[24]);
+        $player->setTwoDayRestPfd($rest2[25]);
+        $player->setTwoDayRestPts($rest2[26]);
+        $player->setTwoDayRestPlusminus($rest2[27]);
+
         return $player;
     }
 
