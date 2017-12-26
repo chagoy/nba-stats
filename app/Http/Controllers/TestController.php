@@ -26,6 +26,7 @@ class TestController extends Controller
         $data = $info->careerStats($player);
         $data = $info->last5($player);
         $data = $info->splits($player);
+        $data = $info->shots($player);
 
         return view('welcome', compact('data'));
     }

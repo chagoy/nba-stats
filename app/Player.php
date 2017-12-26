@@ -1036,4 +1036,244 @@ class Player extends Model
         $this->twoDayRestPlusminus = $stats;
     }
 
+    public function setThreeDayRestWins($stats)
+    {
+        $this->threeDayRestWins = $stats;
+    }
+
+    public function setThreeDayRestLosses($stats)
+    {
+        $this->threeDayRestLosses = $stats;
+    }
+
+    public function setThreeDayRestMin($stats)
+    {
+        $this->threeDayRestMin = $stats;
+    }
+
+    public function setThreeDayRestFgm($stats)
+    {
+        $this->threeDayRestFgm = $stats;
+    }
+
+    public function setThreeDayRestFga($stats)
+    {
+        $this->threeDayRestFga = $stats;
+    }
+
+    public function setThreeDayRestFgpct($stats)
+    {
+        $this->threeDayRestFgpct = $stats;
+    }
+
+    public function setThreeDayRestFg3m($stats)
+    {
+        $this->threeDayRestFgm = $stats;
+    }
+
+    public function setThreeDayRestFg3a($stats)
+    {
+        $this->threeDayRestFga = $stats;
+    }
+
+    public function setThreeDayRestFg3pct($stats)
+    {
+        $this->threeDayRestFgpct = $stats;
+    }
+
+    public function setThreeDayRestFtm($stats)
+    {
+        $this->threeDayRestFtm = $stats;
+    }
+
+    public function setThreeDayRestFta($stats)
+    {
+        $this->threeDayRestFta = $stats;
+    }
+
+    public function setThreeDayRestFtpct($stats)
+    {
+        $this->threeDayRestFtpct = $stats;
+    }
+
+    public function setThreeDayRestOreb($stats)
+    {
+        $this->threeDayRestOreb = $stats;
+    }
+
+    public function setThreeDayRestDreb($stats)
+    {
+        $this->threeDayRestDreb = $stats;
+    }
+
+    public function setThreeDayRestReb($stats)
+    {
+        $this->threeDayRestReb = $stats;
+    }
+
+    public function setThreeDayRestAst($stats)
+    {
+        $this->threeDayRestAst = $stats;
+    }
+
+    public function setThreeDayRestTov($stats)
+    {
+        $this->threeDayRestTov = $stats;
+    }
+
+    public function setThreeDayRestStl($stats)
+    {
+        $this->threeDayRestStl = $stats;
+    }
+
+    public function setThreeDayRestBlk($stats)
+    {
+        $this->threeDayRestBlk = $stats;
+    }
+
+    public function setThreeDayRestBlka($stats)
+    {
+        $this->threeDayRestBlka = $stats;
+    }
+
+    public function setThreeDayRestPf($stats)
+    {
+        $this->threeDayRestPf = $stats;
+    }
+
+    public function setThreeDayRestPfd($stats)
+    {
+        $this->threeDayRestPfd = $stats;
+    }
+
+    public function setThreeDayRestPts($stats)
+    {
+        $this->threeDayRestPts = $stats;
+    }
+
+    public function setThreeDayRestPlusminus($stats)
+    {
+        $this->threeDayRestPlusminus = $stats;
+    }
+
+    public function setFourDayRestWins($stats)
+    {
+        $this->fourDayRestWins = $stats;
+    }
+
+    public function setFourDayRestLosses($stats)
+    {
+        $this->fourDayRestLosses = $stats;
+    }
+
+    public function setFourDayRestMin($stats)
+    {
+        $this->fourDayRestMin = $stats;
+    }
+
+    public function setFourDayRestFgm($stats)
+    {
+        $this->fourDayRestFgm = $stats;
+    }
+
+    public function setFourDayRestFga($stats)
+    {
+        $this->fourDayRestFga = $stats;
+    }
+
+    public function setFourDayRestFgpct($stats)
+    {
+        $this->fourDayRestFgpct = $stats;
+    }
+
+    public function setFourDayRestFg3m($stats)
+    {
+        $this->fourDayRestFgm = $stats;
+    }
+
+    public function setFourDayRestFg3a($stats)
+    {
+        $this->fourDayRestFga = $stats;
+    }
+
+    public function setFourDayRestFg3pct($stats)
+    {
+        $this->fourDayRestFgpct = $stats;
+    }
+
+    public function setFourDayRestFtm($stats)
+    {
+        $this->fourDayRestFtm = $stats;
+    }
+
+    public function setFourDayRestFta($stats)
+    {
+        $this->fourDayRestFta = $stats;
+    }
+
+    public function setFourDayRestFtpct($stats)
+    {
+        $this->fourDayRestFtpct = $stats;
+    }
+
+    public function setFourDayRestOreb($stats)
+    {
+        $this->fourDayRestOreb = $stats;
+    }
+
+    public function setFourDayRestDreb($stats)
+    {
+        $this->fourDayRestDreb = $stats;
+    }
+
+    public function setFourDayRestReb($stats)
+    {
+        $this->fourDayRestReb = $stats;
+    }
+
+    public function setFourDayRestAst($stats)
+    {
+        $this->fourDayRestAst = $stats;
+    }
+
+    public function setFourDayRestTov($stats)
+    {
+        $this->fourDayRestTov = $stats;
+    }
+
+    public function setFourDayRestStl($stats)
+    {
+        $this->fourDayRestStl = $stats;
+    }
+
+    public function setFourDayRestBlk($stats)
+    {
+        $this->fourDayRestBlk = $stats;
+    }
+
+    public function setFourDayRestBlka($stats)
+    {
+        $this->fourDayRestBlka = $stats;
+    }
+
+    public function setFourDayRestPf($stats)
+    {
+        $this->fourDayRestPf = $stats;
+    }
+
+    public function setFourDayRestPfd($stats)
+    {
+        $this->fourDayRestPfd = $stats;
+    }
+
+    public function setFourDayRestPts($stats)
+    {
+        $this->fourDayRestPts = $stats;
+    }
+
+    public function setFourDayRestPlusminus($stats)
+    {
+        $this->fourDayRestPlusminus = $stats;
+    }
+
 }

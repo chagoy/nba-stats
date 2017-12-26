@@ -8,6 +8,7 @@ use JasonRoman\NbaApi\Request\Stats\Stats\Player\PlayerInfoRequest;
 use JasonRoman\NbaApi\Request\Stats\Stats\Player\PlayerCareerStatsRequest;
 use JasonRoman\NbaApi\Request\Stats\Stats\Player\PlayerLastNGamesStatsRequest;
 use JasonRoman\NbaApi\Request\Stats\Stats\Player\PlayerGeneralSplitsStatsRequest;
+use JasonRoman\NbaApi\Request\Stats\Stats\Player\PlayerShotsStatsRequest;
 
 class PlayersRepository
 {
@@ -167,6 +168,7 @@ class PlayersRepository
         $rest1 = $objectResponse['resultSets'][6]['rowSet'][1];
         $rest2 = $objectResponse['resultSets'][6]['rowSet'][2];
         $rest3 = $objectResponse['resultSets'][6]['rowSet'][3];
+        $rest4 = $objectResponse['resultSets'][6]['rowSet'][4];
 
         $player->setHomeWins($home[3]);
         $player->setHomeLosses($home[4]);
@@ -343,8 +345,71 @@ class PlayersRepository
         $player->setTwoDayRestPts($rest2[26]);
         $player->setTwoDayRestPlusminus($rest2[27]);
 
+        $player->setThreeDayRestWins($rest3[3]);
+        $player->setThreeDayRestLosses($rest3[4]);
+        $player->setThreeDayRestMin($rest3[6]);
+        $player->setThreeDayRestFgm($rest3[7]);
+        $player->setThreeDayRestFga($rest3[8]);
+        $player->setThreeDayRestFgpct($rest3[9]);
+        $player->setThreeDayRestFg3m($rest3[10]);
+        $player->setThreeDayRestFg3a($rest3[11]);
+        $player->setThreeDayRestFg3pct($rest3[12]);
+        $player->setThreeDayRestFtm($rest3[13]);
+        $player->setThreeDayRestFta($rest3[14]);
+        $player->setThreeDayRestFtpct($rest3[15]);
+        $player->setThreeDayRestOreb($rest3[16]);
+        $player->setThreeDayRestDreb($rest3[17]);
+        $player->setThreeDayRestReb($rest3[18]);
+        $player->setThreeDayRestAst($rest3[19]);
+        $player->setThreeDayRestTov($rest3[20]);
+        $player->setThreeDayRestStl($rest3[21]);
+        $player->setThreeDayRestBlk($rest3[22]);
+        $player->setThreeDayRestBlka($rest3[23]);
+        $player->setThreeDayRestPf($rest3[24]);
+        $player->setThreeDayRestPfd($rest3[25]);
+        $player->setThreeDayRestPts($rest3[26]);
+        $player->setThreeDayRestPlusminus($rest3[27]);
+
+        $player->setFourDayRestWins($rest4[3]);
+        $player->setFourDayRestLosses($rest4[4]);
+        $player->setFourDayRestMin($rest4[6]);
+        $player->setFourDayRestFgm($rest4[7]);
+        $player->setFourDayRestFga($rest4[8]);
+        $player->setFourDayRestFgpct($rest4[9]);
+        $player->setFourDayRestFg3m($rest4[10]);
+        $player->setFourDayRestFg3a($rest4[11]);
+        $player->setFourDayRestFg3pct($rest4[12]);
+        $player->setFourDayRestFtm($rest4[13]);
+        $player->setFourDayRestFta($rest4[14]);
+        $player->setFourDayRestFtpct($rest4[15]);
+        $player->setFourDayRestOreb($rest4[16]);
+        $player->setFourDayRestDreb($rest4[17]);
+        $player->setFourDayRestReb($rest4[18]);
+        $player->setFourDayRestAst($rest4[19]);
+        $player->setFourDayRestTov($rest4[20]);
+        $player->setFourDayRestStl($rest4[21]);
+        $player->setFourDayRestBlk($rest4[22]);
+        $player->setFourDayRestBlka($rest4[23]);
+        $player->setFourDayRestPf($rest4[24]);
+        $player->setFourDayRestPfd($rest4[25]);
+        $player->setFourDayRestPts($rest4[26]);
+        $player->setFourDayRestPlusminus($rest4[27]);
+
         return $player;
     }
 
+    public function shots(Player $player)
+    {
+        $request = PlayerShotsStatsRequest::fromArray([
+            'season' => '2017-18',
+            'playerId' => $player->player_id,
+            'teamId' => $player->team_id
+        ]);
 
+        $response = $this->client->request($request);
+
+        $objectResponse = $response->getArrayFromJson();
+
+        dd($objectResponse);
+    }
 }
