@@ -1276,4 +1276,999 @@ class Player extends Model
         $this->fourDayRestPlusminus = $stats;
     }
 
+    public function setGeneralShotsGamesPlayed($stats)
+    {
+        $this->generalShotsGamesPlayed = $stats;
+    }
+
+    public function setGeneralShotsGames($stats)
+    {
+        $this->generalShotsGames = $stats;
+    }
+
+    public function setGeneralShotsFgaFrequency($stats)
+    {
+        $this->generalShotsFgaFrequency = $stats;
+    }
+
+    public function setGeneralShotsFgm($stats)
+    {
+        $this->generalShotsFgm = $stats;
+    }
+
+    public function setGeneralShotsFga($stats)
+    {
+        $this->generalShotsFga = $stats;
+    }
+
+    public function setGeneralShotsFgPct($stats)
+    {
+        $this->generalShotsFgPct = $stats;
+    }
+
+    public function setGeneralShotsEfgPct($stats)
+    {
+        $this->generalShotsEfgPct = $stats;
+    }
+
+    public function setGeneralShotsFg2aFrequency($stats)
+    {
+        $this->generalShotsFg2aFrequency = $stats;
+    }
+
+    public function setGeneralShotsFg2m($stats)
+    {
+        $this->generalShotsFg2m = $stats;
+    }
+
+    public function setGeneralShotsFg2a($stats)
+    {
+        $this->generalShotsFg2a = $stats;
+    }
+
+    public function setGeneralShotsFg2Pct($stats)
+    {
+        $this->generalShotsFg2Pct = $stats;
+    }
+
+    public function setGeneralShotsFg3aFrequency($stats)
+    {
+        $this->generalShotsFg3aFrequency = $stats;
+    }
+
+    public function setGeneralShotsFg3m($stats)
+    {
+        $this->generalshotsFg3m = $stats;
+    }
+
+    public function setGeneralShotsFg3a($stats)
+    {
+        $this->generalShotsFg3a = $stats;
+    }
+
+    public function setGeneralShotsFg3Pct($stats)
+    {
+        $this->generalShotsFg3Pct = $stats;
+    }
+
+    public function setGeneralCatchShootGamesPlayed($stats)
+    {
+        $this->generalCatchShootGamesPlayed = $stats;
+    }
+
+    public function setGeneralCatchShootGames($stats)
+    {
+        $this->generalCatchShootGames = $stats;
+    }
+
+    public function setGeneralCatchShootFgaFrequency($stats)
+    {
+        $this->generalCatchShootFgaFrequency = $stats;
+    }
+
+    public function setGeneralCatchShootFgm($stats)
+    {
+        $this->generalCatchShootFgm = $stats;
+    }
+
+    public function setGeneralCatchShootFga($stats)
+    {
+        $this->generalCatchShootFga = $stats;
+    }
+
+    public function setGeneralCatchShootFgPct($stats)
+    {
+        $this->generalCatchShootFgPct = $stats;
+    }
+
+    public function setGeneralCatchShootEfgPct($stats)
+    {
+        $this->generalCatchShootEfg = $stats;
+    }
+
+    public function setGeneralCatchShootFg2aFrequency($stats)
+    {
+        $this->generalCatchShootFg2aFrequency = $stats;
+    }
+
+    public function setGeneralCatchShootFg2m($stats)
+    {
+        $this->generalCatchShootFg2m = $stats;
+    }
+
+    public function setGeneralCatchShootFg2a($stats)
+    {
+        $this->generalCatchShootFg2a = $stats;
+    }
+
+    public function setGeneralCatchShootFg2pct($stats)
+    {
+        $this->generalCatchShootFg2pct = $stats;
+    }
+
+    public function setGeneralCatchShootFg3aFrequency($stats)
+    {
+        $this->generalCatchShootFg3aFrequency = $stats;
+    }
+
+    public function setGeneralCatchShootFg3m($stats)
+    {
+        $this->generalCatchShootFg3m = $stats;
+    }
+
+    public function setGeneralCatchShootFg3a($stats)
+    {
+        $this->generalCatchShootFg3a = $stats;
+    }
+
+    public function setGeneralCatchShootFg3Pct($stats)
+    {
+        $this->generalCatchShootFg3Pct = $stats;
+    }
+
+    public function setGeneralPullUpGamesPlayed($stats)
+    {
+        $this->generalPullUpGamesPlayed = $stats;
+    }
+
+    public function setGeneralPullUpGames($stats)
+    {
+        $this->generalPullUpGames = $stats;
+    }
+
+    public function setGeneralPullUpFgaFrequency($stats)
+    {
+        $this->generalPullUpFgaFrequency = $stats;
+    }
+
+    public function setGeneralPullUpFgm($stats)
+    {
+        $this->generalPullUpFgm = $stats;
+    }
+
+    public function setGeneralPullUpFga($stats)
+    {
+        $this->generalPullUpFga = $stats;
+    }
+
+    public function setGeneralPullUpFgPct($stats)
+    {
+        $this->generalPullUpFgPct = $stats;
+    }
+
+    public function setGeneralPullUpEfgPct($stats)
+    {
+        $this->generalPullUpEfg = $stats;
+    }
+
+    public function setGeneralPullUpFg2aFrequency($stats)
+    {
+        $this->generalPullUpFg2aFrequency = $stats;
+    }
+
+    public function setGeneralPullUpFg2m($stats)
+    {
+        $this->generalPullUpFg2m = $stats;
+    }
+
+    public function setGeneralPullUpFg2a($stats)
+    {
+        $this->generalPullUpFg2a = $stats;
+    }
+
+    public function setGeneralPullUpFg2pct($stats)
+    {
+        $this->generalPullUpFg2pct = $stats;
+    }
+
+    public function setGeneralPullUpFg3aFrequency($stats)
+    {
+        $this->generalPullUpFg3aFrequency = $stats;
+    }
+
+    public function setGeneralPullUpFg3m($stats)
+    {
+        $this->generalPullUpFg3m = $stats;
+    }
+
+    public function setGeneralPullUpFg3a($stats)
+    {
+        $this->generalPullUpFg3a = $stats;
+    }
+
+    public function setGeneralPullUpFg3Pct($stats)
+    {
+        $this->generalPullUpFg3Pct = $stats;
+    }
+
+    public function setGeneralLess10GamesPlayed($stats)
+    {
+        $this->generalLess10GamesPlayed = $stats;
+    }
+
+    public function setGeneralLess10Games($stats)
+    {
+        $this->generalLess10Games = $stats;
+    }
+
+    public function setGeneralLess10FgaFrequency($stats)
+    {
+        $this->generalLess10FgaFrequency = $stats;
+    }
+
+    public function setGeneralLess10Fgm($stats)
+    {
+        $this->generalLess10Fgm = $stats;
+    }
+
+    public function setGeneralLess10Fga($stats)
+    {
+        $this->generalLess10Fga = $stats;
+    }
+
+    public function setGeneralLess10FgPct($stats)
+    {
+        $this->generalLess10FgPct = $stats;
+    }
+
+    public function setGeneralLess10EfgPct($stats)
+    {
+        $this->generalLess10Efg = $stats;
+    }
+
+    public function setGeneralLess10Fg2aFrequency($stats)
+    {
+        $this->generalLess10Fg2aFrequency = $stats;
+    }
+
+    public function setGeneralLess10Fg2m($stats)
+    {
+        $this->generalLess10Fg2m = $stats;
+    }
+
+    public function setGeneralLess10Fg2a($stats)
+    {
+        $this->generalLess10Fg2a = $stats;
+    }
+
+    public function setGeneralLess10Fg2pct($stats)
+    {
+        $this->generalLess10Fg2pct = $stats;
+    }
+
+    public function setGeneralLess10Fg3aFrequency($stats)
+    {
+        $this->generalLess10Fg3aFrequency = $stats;
+    }
+
+    public function setGeneralLess10Fg3m($stats)
+    {
+        $this->generalLess10Fg3m = $stats;
+    }
+
+    public function setGeneralLess10Fg3a($stats)
+    {
+        $this->generalLess10Fg3a = $stats;
+    }
+
+    public function setGeneralLess10Fg3Pct($stats)
+    {
+        $this->generalLess10Fg3Pct = $stats;
+    }
+
+    public function setNoDribbleGamesPlayed($stats)
+    {
+        $this->noDribbleGamesPlayed = $stats;
+    }
+
+    public function setNoDribbleGames($stats)
+    {
+        $this->noDribbleGames = $stats;
+    }
+
+    public function setNoDribbleFgaFrequency($stats)
+    {
+        $this->noDribbleFgaFrequency = $stats;
+    }
+
+    public function setNoDribbleFgm($stats)
+    {
+        $this->noDribbleFgm = $stats;
+    }
+
+    public function setNoDribbleFga($stats)
+    {
+        $this->noDribbleFga = $stats;
+    }
+
+    public function setNoDribbleFgPct($stats)
+    {
+        $this->noDribbleFgPct = $stats;
+    }
+
+    public function setNoDribbleEfgPct($stats)
+    {
+        $this->noDribbleEfg = $stats;
+    }
+
+    public function setNoDribbleFg2aFrequency($stats)
+    {
+        $this->noDribbleFg2aFrequency = $stats;
+    }
+
+    public function setNoDribbleFg2m($stats)
+    {
+        $this->noDribbleFg2m = $stats;
+    }
+
+    public function setNoDribbleFg2a($stats)
+    {
+        $this->noDribbleFg2a = $stats;
+    }
+
+    public function setNoDribbleFg2pct($stats)
+    {
+        $this->noDribbleFg2pct = $stats;
+    }
+
+    public function setNoDribbleFg3aFrequency($stats)
+    {
+        $this->noDribbleFg3aFrequency = $stats;
+    }
+
+    public function setNoDribbleFg3m($stats)
+    {
+        $this->noDribbleFg3m = $stats;
+    }
+
+    public function setNoDribbleFg3a($stats)
+    {
+        $this->noDribbleFg3a = $stats;
+    }
+
+    public function setNoDribbleFg3Pct($stats)
+    {
+        $this->noDribbleFg3Pct = $stats;
+    }
+
+    public function setOneDribbleGamesPlayed($stats)
+    {
+        $this->oneDribbleGamesPlayed = $stats;
+    }
+
+    public function setOneDribbleGames($stats)
+    {
+        $this->oneDribbleGames = $stats;
+    }
+
+    public function setOneDribbleFgaFrequency($stats)
+    {
+        $this->oneDribbleFgaFrequency = $stats;
+    }
+
+    public function setOneDribbleFgm($stats)
+    {
+        $this->oneDribbleFgm = $stats;
+    }
+
+    public function setOneDribbleFga($stats)
+    {
+        $this->oneDribbleFga = $stats;
+    }
+
+    public function setOneDribbleFgPct($stats)
+    {
+        $this->oneDribbleFgPct = $stats;
+    }
+
+    public function setOneDribbleEfgPct($stats)
+    {
+        $this->oneDribbleEfg = $stats;
+    }
+
+    public function setOneDribbleFg2aFrequency($stats)
+    {
+        $this->oneDribbleFg2aFrequency = $stats;
+    }
+
+    public function setOneDribbleFg2m($stats)
+    {
+        $this->oneDribbleFg2m = $stats;
+    }
+
+    public function setOneDribbleFg2a($stats)
+    {
+        $this->oneDribbleFg2a = $stats;
+    }
+
+    public function setOneDribbleFg2pct($stats)
+    {
+        $this->oneDribbleFg2pct = $stats;
+    }
+
+    public function setOneDribbleFg3aFrequency($stats)
+    {
+        $this->oneDribbleFg3aFrequency = $stats;
+    }
+
+    public function setOneDribbleFg3m($stats)
+    {
+        $this->oneDribbleFg3m = $stats;
+    }
+
+    public function setOneDribbleFg3a($stats)
+    {
+        $this->oneDribbleFg3a = $stats;
+    }
+
+    public function setOneDribbleFg3Pct($stats)
+    {
+        $this->oneDribbleFg3Pct = $stats;
+    }
+
+    public function setTwoDribbleGamesPlayed($stats)
+    {
+        $this->twoDribbleGamesPlayed = $stats;
+    }
+
+    public function setTwoDribbleGames($stats)
+    {
+        $this->twoDribbleGames = $stats;
+    }
+
+    public function setTwoDribbleFgaFrequency($stats)
+    {
+        $this->twoDribbleFgaFrequency = $stats;
+    }
+
+    public function setTwoDribbleFgm($stats)
+    {
+        $this->twoDribbleFgm = $stats;
+    }
+
+    public function setTwoDribbleFga($stats)
+    {
+        $this->twoDribbleFga = $stats;
+    }
+
+    public function setTwoDribbleFgPct($stats)
+    {
+        $this->twoDribbleFgPct = $stats;
+    }
+
+    public function setTwoDribbleEfgPct($stats)
+    {
+        $this->twoDribbleEfg = $stats;
+    }
+
+    public function setTwoDribbleFg2aFrequency($stats)
+    {
+        $this->twoDribbleFg2aFrequency = $stats;
+    }
+
+    public function setTwoDribbleFg2m($stats)
+    {
+        $this->twoDribbleFg2m = $stats;
+    }
+
+    public function setTwoDribbleFg2a($stats)
+    {
+        $this->twoDribbleFg2a = $stats;
+    }
+
+    public function setTwoDribbleFg2pct($stats)
+    {
+        $this->twoDribbleFg2pct = $stats;
+    }
+
+    public function setTwoDribbleFg3aFrequency($stats)
+    {
+        $this->twoDribbleFg3aFrequency = $stats;
+    }
+
+    public function setTwoDribbleFg3m($stats)
+    {
+        $this->twoDribbleFg3m = $stats;
+    }
+
+    public function setTwoDribbleFg3a($stats)
+    {
+        $this->twoDribbleFg3a = $stats;
+    }
+
+    public function setTwoDribbleFg3Pct($stats)
+    {
+        $this->twoDribbleFg3Pct = $stats;
+    }
+
+    public function setThreeSixDribbleGamesPlayed($stats)
+    {
+        $this->threeSixDribbleGamesPlayed = $stats;
+    }
+
+    public function setThreeSixDribbleGames($stats)
+    {
+        $this->threeSixDribbleGames = $stats;
+    }
+
+    public function setThreeSixDribbleFgaFrequency($stats)
+    {
+        $this->threeSixDribbleFgaFrequency = $stats;
+    }
+
+    public function setThreeSixDribbleFgm($stats)
+    {
+        $this->threeSixDribbleFgm = $stats;
+    }
+
+    public function setThreeSixDribbleFga($stats)
+    {
+        $this->threeSixDribbleFga = $stats;
+    }
+
+    public function setThreeSixDribbleFgPct($stats)
+    {
+        $this->threeSixDribbleFgPct = $stats;
+    }
+
+    public function setThreeSixDribbleEfgPct($stats)
+    {
+        $this->threeSixDribbleEfg = $stats;
+    }
+
+    public function setThreeSixDribbleFg2aFrequency($stats)
+    {
+        $this->threeSixDribbleFg2aFrequency = $stats;
+    }
+
+    public function setThreeSixDribbleFg2m($stats)
+    {
+        $this->threeSixDribbleFg2m = $stats;
+    }
+
+    public function setThreeSixDribbleFg2a($stats)
+    {
+        $this->threeSixDribbleFg2a = $stats;
+    }
+
+    public function setThreeSixDribbleFg2pct($stats)
+    {
+        $this->threeSixDribbleFg2pct = $stats;
+    }
+
+    public function setThreeSixDribbleFg3aFrequency($stats)
+    {
+        $this->threeSixDribbleFg3aFrequency = $stats;
+    }
+
+    public function setThreeSixDribbleFg3m($stats)
+    {
+        $this->threeSixDribbleFg3m = $stats;
+    }
+
+    public function setThreeSixDribbleFg3a($stats)
+    {
+        $this->threeSixDribbleFg3a = $stats;
+    }
+
+    public function setThreeSixDribbleFg3Pct($stats)
+    {
+        $this->threeSixDribbleFg3Pct = $stats;
+    }
+
+    public function setSevenDribbleGamesPlayed($stats)
+    {
+        $this->sevenDribbleGamesPlayed = $stats;
+    }
+
+    public function setSevenDribbleGames($stats)
+    {
+        $this->sevenDribbleGames = $stats;
+    }
+
+    public function setSevenDribbleFgaFrequency($stats)
+    {
+        $this->sevenDribbleFgaFrequency = $stats;
+    }
+
+    public function setSevenDribbleFgm($stats)
+    {
+        $this->sevenDribbleFgm = $stats;
+    }
+
+    public function setSevenDribbleFga($stats)
+    {
+        $this->sevenDribbleFga = $stats;
+    }
+
+    public function setSevenDribbleFgPct($stats)
+    {
+        $this->sevenDribbleFgPct = $stats;
+    }
+
+    public function setSevenDribbleEfgPct($stats)
+    {
+        $this->sevenDribbleEfg = $stats;
+    }
+
+    public function setSevenDribbleFg2aFrequency($stats)
+    {
+        $this->sevenDribbleFg2aFrequency = $stats;
+    }
+
+    public function setSevenDribbleFg2m($stats)
+    {
+        $this->sevenDribbleFg2m = $stats;
+    }
+
+    public function setSevenDribbleFg2a($stats)
+    {
+        $this->sevenDribbleFg2a = $stats;
+    }
+
+    public function setSevenDribbleFg2pct($stats)
+    {
+        $this->sevenDribbleFg2pct = $stats;
+    }
+
+    public function setSevenDribbleFg3aFrequency($stats)
+    {
+        $this->sevenDribbleFg3aFrequency = $stats;
+    }
+
+    public function setSevenDribbleFg3m($stats)
+    {
+        $this->sevenDribbleFg3m = $stats;
+    }
+
+    public function setSevenDribbleFg3a($stats)
+    {
+        $this->sevenDribbleFg3a = $stats;
+    }
+
+    public function setSevenDribbleFg3Pct($stats)
+    {
+        $this->sevenDribbleFg3Pct = $stats;
+    }
+
+    public function setClosestDefenderVeryTightRange($stats)
+    {
+        $this->closestDefenderVeryTightRange = $stats;
+    }
+
+    public function setClosestDefenderVeryTightGamesPlayed($stats)
+    {
+        $this->closestDefenderVeryTightGamesPlayed = $stats;
+    }
+
+    public function setClosestDefenderVeryTightGames($stats)
+    {
+        $this->closestDefenderVeryTightGames = $stats;
+    }
+
+    public function setClosestDefenderVeryTightFgaFrequency($stats)
+    {
+        $this->closestDefenderVeryTightFgaFrequency = $stats;
+    }
+
+    public function setClosestDefenderVeryTightFgm($stats)
+    {
+        $this->closestDefenderVeryTightFgm = $stats;
+    }
+
+    public function setClosestDefenderVeryTightFga($stats)
+    {
+        $this->closestDefenderVeryTightFga = $stats;
+    }
+
+    public function setClosestDefenderVeryTightFgPct($stats)
+    {
+        $this->closestDefenderVeryTightFgPct = $stats;
+    }
+
+    public function setClosestDefenderVeryTightEfgPct($stats)
+    {
+        $this->closestDefenderVeryTightEfgPct = $stats;
+    }
+
+    public function setClosestDefenderVeryTightFg2aFrequency($stats)
+    {
+        $this->closestDefenderVeryTightFg2aFrequency = $stats;
+    }
+
+    public function setClosestDefenderVeryTightFg2m($stats)
+    {
+        $this->closestDefenderVeryTightFg2m = $stats;
+    }
+
+    public function setClosestDefenderVeryTightFg2a($stats)
+    {
+        $this->closestDefenderVeryTightFg2a = $stats;
+    }
+
+    public function setClosestDefenderVeryTightFg2Pct($stats)
+    {
+        $this->closestDefenderVeryTightFg2Pct = $stats;
+    }
+
+    public function setClosestDefenderVeryTightFg3aFrequency($stats)
+    {
+        $this->closestDefenderVeryTightFg3aFrequency = $stats;
+    }
+
+    public function setClosestDefenderVeryTightFg3m($stats)
+    {
+        $this->closestDefenderVeryTightFg3m = $stats;
+    }
+
+    public function setClosestDefenderVeryTightFg3a($stats)
+    {
+        $this->closestDefenderVeryTightFg3a = $stats;
+    }
+
+    public function setClosestDefenderVeryTightFg3Pct($stats)
+    {
+        $this->closestDefenderVeryTightFg3Pct = $stats;
+    }
+
+    public function setClosestDefenderTightRange($stats)
+    {
+        $this->closestDefenderTightRange = $stats;
+    }
+
+    public function setClosestDefenderTightGamesPlayed($stats)
+    {
+        $this->closestDefenderTightGamesPlayed = $stats;
+    }
+
+    public function setClosestDefenderTightGames($stats)
+    {
+        $this->closestDefenderTightGames = $stats;
+    }
+
+    public function setClosestDefenderTightFgaFrequency($stats)
+    {
+        $this->closestDefenderTightFgaFrequency = $stats;
+    }
+
+    public function setClosestDefenderTightFgm($stats)
+    {
+        $this->closestDefenderTightFgm = $stats;
+    }
+
+    public function setClosestDefenderTightFga($stats)
+    {
+        $this->closestDefenderTightFga = $stats;
+    }
+
+    public function setClosestDefenderTightFgPct($stats)
+    {
+        $this->closestDefenderTightFgPct = $stats;
+    }
+
+    public function setClosestDefenderTightEfgPct($stats)
+    {
+        $this->closestDefenderTightEfgPct = $stats;
+    }
+
+    public function setClosestDefenderTightFg2aFrequency($stats)
+    {
+        $this->closestDefenderTightFg2aFrequency = $stats;
+    }
+
+    public function setClosestDefenderTightFg2m($stats)
+    {
+        $this->closestDefenderTightFg2m = $stats;
+    }
+
+    public function setClosestDefenderTightFg2a($stats)
+    {
+        $this->closestDefenderTightFg2a = $stats;
+    }
+
+    public function setClosestDefenderTightFg2Pct($stats)
+    {
+        $this->closestDefenderTightFg2Pct = $stats;
+    }
+
+    public function setClosestDefenderTightFg3aFrequency($stats)
+    {
+        $this->closestDefenderTightFg3aFrequency = $stats;
+    }
+
+    public function setClosestDefenderTightFg3m($stats)
+    {
+        $this->closestDefenderTightFg3m = $stats;
+    }
+
+    public function setClosestDefenderTightFg3a($stats)
+    {
+        $this->closestDefenderTightFg3a = $stats;
+    }
+
+    public function setClosestDefenderTightFg3Pct($stats)
+    {
+        $this->closestDefenderTightFg3Pct = $stats;
+    }
+
+    public function setClosestDefenderOpenRange($stats)
+    {
+        $this->closestDefenderOpenRange = $stats;
+    }
+
+    public function setClosestDefenderOpenGamesPlayed($stats)
+    {
+        $this->closestDefenderOpenGamesPlayed = $stats;
+    }
+
+    public function setClosestDefenderOpenGames($stats)
+    {
+        $this->closestDefenderOpenGames = $stats;
+    }
+
+    public function setClosestDefenderOpenFgaFrequency($stats)
+    {
+        $this->closestDefenderOpenFgaFrequency = $stats;
+    }
+
+    public function setClosestDefenderOpenFgm($stats)
+    {
+        $this->closestDefenderOpenFgm = $stats;
+    }
+
+    public function setClosestDefenderOpenFga($stats)
+    {
+        $this->closestDefenderOpenFga = $stats;
+    }
+
+    public function setClosestDefenderOpenFgPct($stats)
+    {
+        $this->closestDefenderOpenFgPct = $stats;
+    }
+
+    public function setClosestDefenderOpenEfgPct($stats)
+    {
+        $this->closestDefenderOpenEfgPct = $stats;
+    }
+
+    public function setClosestDefenderOpenFg2aFrequency($stats)
+    {
+        $this->closestDefenderOpenFg2aFrequency = $stats;
+    }
+
+    public function setClosestDefenderOpenFg2m($stats)
+    {
+        $this->closestDefenderOpenFg2m = $stats;
+    }
+
+    public function setClosestDefenderOpenFg2a($stats)
+    {
+        $this->closestDefenderOpenFg2a = $stats;
+    }
+
+    public function setClosestDefenderOpenFg2Pct($stats)
+    {
+        $this->closestDefenderOpenFg2Pct = $stats;
+    }
+
+    public function setClosestDefenderOpenFg3aFrequency($stats)
+    {
+        $this->closestDefenderOpenFg3aFrequency = $stats;
+    }
+
+    public function setClosestDefenderOpenFg3m($stats)
+    {
+        $this->closestDefenderOpenFg3m = $stats;
+    }
+
+    public function setClosestDefenderOpenFg3a($stats)
+    {
+        $this->closestDefenderOpenFg3a = $stats;
+    }
+
+    public function setClosestDefenderOpenFg3Pct($stats)
+    {
+        $this->closestDefenderOpenFg3Pct = $stats;
+    }
+
+    public function setClosestDefenderVeryOpenRange($stats)
+    {
+        $this->closestDefenderVeryOpenRange = $stats;
+    }
+
+    public function setClosestDefenderVeryOpenGamesPlayed($stats)
+    {
+        $this->closestDefenderVeryOpenGamesPlayed = $stats;
+    }
+
+    public function setClosestDefenderVeryOpenGames($stats)
+    {
+        $this->closestDefenderVeryOpenGames = $stats;
+    }
+
+    public function setClosestDefenderVeryOpenFgaFrequency($stats)
+    {
+        $this->closestDefenderVeryOpenFgaFrequency = $stats;
+    }
+
+    public function setClosestDefenderVeryOpenFgm($stats)
+    {
+        $this->closestDefenderVeryOpenFgm = $stats;
+    }
+
+    public function setClosestDefenderVeryOpenFga($stats)
+    {
+        $this->closestDefenderVeryOpenFga = $stats;
+    }
+
+    public function setClosestDefenderVeryOpenFgPct($stats)
+    {
+        $this->closestDefenderVeryOpenFgPct = $stats;
+    }
+
+    public function setClosestDefenderVeryOpenEfgPct($stats)
+    {
+        $this->closestDefenderVeryOpenEfgPct = $stats;
+    }
+
+    public function setClosestDefenderVeryOpenFg2aFrequency($stats)
+    {
+        $this->closestDefenderVeryOpenFg2aFrequency = $stats;
+    }
+
+    public function setClosestDefenderVeryOpenFg2m($stats)
+    {
+        $this->closestDefenderVeryOpenFg2m = $stats;
+    }
+
+    public function setClosestDefenderVeryOpenFg2a($stats)
+    {
+        $this->closestDefenderVeryOpenFg2a = $stats;
+    }
+
+    public function setClosestDefenderVeryOpenFg2Pct($stats)
+    {
+        $this->closestDefenderVeryOpenFg2Pct = $stats;
+    }
+
+    public function setClosestDefenderVeryOpenFg3aFrequency($stats)
+    {
+        $this->closestDefenderVeryOpenFg3aFrequency = $stats;
+    }
+
+    public function setClosestDefenderVeryOpenFg3m($stats)
+    {
+        $this->closestDefenderVeryOpenFg3m = $stats;
+    }
+
+    public function setClosestDefenderVeryOpenFg3a($stats)
+    {
+        $this->closestDefenderVeryOpenFg3a = $stats;
+    }
+
+    public function setClosestDefenderVeryOpenFg3Pct($stats)
+    {
+        $this->closestDefenderVeryOpenFg3Pct = $stats;
+    }
+
 }
