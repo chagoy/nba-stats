@@ -30850,10 +30850,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    props: ['info', 'career']
+    props: ['stats']
 });
 
 /***/ }),
@@ -30864,15 +30863,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [
-    _vm._v(
-      "\n    Name: " +
-        _vm._s(_vm.info.resultSets[0].rowSet[0][3]) +
-        "\n    College: " +
-        _vm._s(_vm.info.resultSets[0].rowSet[0][7]) +
-        "\n"
-    )
-  ])
+  return _c("div", { staticClass: "container" })
 }
 var staticRenderFns = []
 render._withStripped = true

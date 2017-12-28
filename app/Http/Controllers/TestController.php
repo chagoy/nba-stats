@@ -27,21 +27,8 @@ class TestController extends Controller
         $data = $info->last5($player);
         $data = $info->splits($player);
         $data = $info->shots($player);
+        $data = $info->rebounds($player);
 
         return view('welcome', compact('data'));
     }
 }
-
-// go to nba.com/player
-// web.php -> controller -> getPlayer
-// getPlayer calls $player->info 
-// model Player uses model/interface
-// interface -> info() queries the service to use api
-// api returns the data 
-// call method for hydration
-// hydrate() = new Player()
-// inside player there are methods to assign fields
-// player->points_per_game = returnedData.fields[43]
-// at the end
-// return player
-// this should be returned back to the controller where you get it in the view to use

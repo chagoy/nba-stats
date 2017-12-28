@@ -3,12 +3,14 @@
 namespace App\Repositories;
 
 use App\Player;
+use stdClass;
 use JasonRoman\NbaApi\Client\Client;
 use JasonRoman\NbaApi\Request\Stats\Stats\Player\PlayerInfoRequest;
 use JasonRoman\NbaApi\Request\Stats\Stats\Player\PlayerCareerStatsRequest;
 use JasonRoman\NbaApi\Request\Stats\Stats\Player\PlayerLastNGamesStatsRequest;
 use JasonRoman\NbaApi\Request\Stats\Stats\Player\PlayerGeneralSplitsStatsRequest;
 use JasonRoman\NbaApi\Request\Stats\Stats\Player\PlayerShotsStatsRequest;
+use JasonRoman\NbaApi\Request\Stats\Stats\Player\PlayerReboundsStatsRequest;
 
 class PlayersRepository
 {
@@ -19,6 +21,8 @@ class PlayersRepository
 
     public function playerInfo(Player $player)
     {
+        $player->basicInfo = new StdClass;
+
         $request  = PlayerInfoRequest::fromArray([
             'playerId' => $player->player_id,
             'leagueId' => '00'
@@ -65,6 +69,8 @@ class PlayersRepository
 
     public function last5(Player $player)
     {
+        $player->last5 = new stdClass;
+
         $request = PlayerLastNGamesStatsRequest::fromArray([
             'measureType'    => 'Base',
             'perMode'        => 'PerGame',
@@ -160,14 +166,31 @@ class PlayersRepository
 
         $objectResponse = $response->getArrayFromJson();
         
+        $player->home = new stdClass;
         $home = $objectResponse['resultSets'][1]['rowSet'][0];
+        
+        $player->away = new stdClass;
         $away = $objectResponse['resultSets'][1]['rowSet'][1];
+        
+        $player->win = new stdClass;
         $wins = $objectResponse['resultSets'][2]['rowSet'][0];
+        
+        $player->loss = new stdClass;
         $losses = $objectResponse['resultSets'][2]['rowSet'][1];
+
+        $player->noRest = new stdClass;
         $rest0 = $objectResponse['resultSets'][6]['rowSet'][0];
+
+        $player->oneDayRest = new stdClass;
         $rest1 = $objectResponse['resultSets'][6]['rowSet'][1];
+
+        $player->twoDaysRest = new stdClass;
         $rest2 = $objectResponse['resultSets'][6]['rowSet'][2];
+
+        $player->threeDaysRest = new stdClass;
         $rest3 = $objectResponse['resultSets'][6]['rowSet'][3];
+
+        $player->fourDaysRest = new stdClass;
         $rest4 = $objectResponse['resultSets'][6]['rowSet'][4];
 
         $player->setHomeWins($home[3]);
@@ -410,20 +433,57 @@ class PlayersRepository
 
         $objectResponse = $response->getArrayFromJson();
 
+        $player->generalShotData = new stdClass;
         $generalShotData = $objectResponse['resultSets'][0]['rowSet'][0];
+
+        $player->generalCatchShoot = new stdClass;
         $generalCatchShoot = $objectResponse['resultSets'][1]['rowSet'][0];
+
+        $player->generalPullUp = new stdClass;
         $generalPullUp = $objectResponse['resultSets'][1]['rowSet'][1];
+
+        $player->generalLess10Ft = new stdClass;
         $generalLess10 = $objectResponse['resultSets'][1]['rowSet'][2];
+        
+        $player->noDribble = new stdClass;
         $noDribble = $objectResponse['resultSets'][3]['rowSet'][0];
+
+        $player->oneDribble = new stdClass;
         $oneDribble = $objectResponse['resultSets'][3]['rowSet'][1];
+
+        $player->twoDribble = new stdClass;
         $twoDribble = $objectResponse['resultSets'][3]['rowSet'][2];
+
+        $player->threeSixDribble = new stdClass;
         $threeSixDribble = $objectResponse['resultSets'][3]['rowSet'][3];
+
+        $player->sevenDribble = new stdClass;
         $sevenDribble = $objectResponse['resultSets'][3]['rowSet'][4];
+
+        $player->closestDefenderVeryTight = new stdClass;
         $closestDefenderVeryTight = $objectResponse['resultSets'][4]['rowSet'][0];
+
+        $player->closestDefenderTight = new stdClass;
         $closestDefenderTight = $objectResponse['resultSets'][4]['rowSet'][1];
+
+        $player->closestDefenderOpen = new stdClass;
         $closestDefenderOpen = $objectResponse['resultSets'][4]['rowSet'][2];
+
+        $player->closestDefenderVeryOpen = new stdClass;
         $closestDefenderVeryOpen = $objectResponse['resultSets'][4]['rowSet'][3];
 
+        $player->closestDefender10PlusVeryTight = new stdClass;
+        $closestDefender10PlusVeryTight = $objectResponse['resultSets'][5]['rowSet'][0];
+
+        $player->closestDefender10PlusTight = new stdClass;
+        $closestDefender10PlusTight = $objectResponse['resultSets'][5]['rowSet'][1];
+
+        $player->closestDefender10PlusOpen = new stdClass;
+        $closestDefender10PlusOpen = $objectResponse['resultSets'][5]['rowSet'][2];
+
+        $player->closestDefender10PlusVeryOpen = new stdClass;
+        $closestDefender10PlusVeryOpen = $objectResponse['resultSets'][5]['rowSet'][3];
+            
         $player->setGeneralShotsGamesPlayed($generalShotData[3]);
         $player->setGeneralShotsGames($generalShotData[4]);
         $player->setGeneralShotsFgaFrequency($generalShotData[6]);
@@ -635,6 +695,139 @@ class PlayersRepository
         $player->setClosestDefenderVeryOpenFg3m($closestDefenderVeryOpen[16]);
         $player->setClosestDefenderVeryOpenFg3a($closestDefenderVeryOpen[17]);
         $player->setClosestDefenderVeryOpenFg3Pct($closestDefenderVeryOpen[18]);
+
+        $player->setClosestDefender10PlusVeryTightRange($closestDefender10PlusVeryTight[5]);
+        $player->setClosestDefender10PlusVeryTightGamesPlayed($closestDefender10PlusVeryTight[3]);
+        $player->setClosestDefender10PlusVeryTightGames($closestDefender10PlusVeryTight[4]);
+        $player->setClosestDefender10PlusVeryTightFgaFrequency($closestDefender10PlusVeryTight[6]);
+        $player->setClosestDefender10PlusVeryTightFgm($closestDefender10PlusVeryTight[7]);
+        $player->setClosestDefender10PlusVeryTightFga($closestDefender10PlusVeryTight[8]);
+        $player->setClosestDefender10PlusVeryTightFgPct($closestDefender10PlusVeryTight[9]);
+        $player->setClosestDefender10PlusVeryTightEfgPct($closestDefender10PlusVeryTight[10]);
+        $player->setClosestDefender10PlusVeryTightFg2aFrequency($closestDefender10PlusVeryTight[11]);
+        $player->setClosestDefender10PlusVeryTightFg2m($closestDefender10PlusVeryTight[12]);
+        $player->setClosestDefender10PlusVeryTightFg2a($closestDefender10PlusVeryTight[13]);
+        $player->setClosestDefender10PlusVeryTightFg2Pct($closestDefender10PlusVeryTight[14]);
+        $player->setClosestDefender10PlusVeryTightFg3aFrequency($closestDefender10PlusVeryTight[15]);
+        $player->setClosestDefender10PlusVeryTightFg3m($closestDefender10PlusVeryTight[16]);
+        $player->setClosestDefender10PlusVeryTightFg3a($closestDefender10PlusVeryTight[17]);
+        $player->setClosestDefender10PlusVeryTightFg3Pct($closestDefender10PlusVeryTight[18]);
+
+        $player->setClosestDefender10PlusTightRange($closestDefender10PlusTight[5]);
+        $player->setClosestDefender10PlusTightGamesPlayed($closestDefender10PlusTight[3]);
+        $player->setClosestDefender10PlusTightGames($closestDefender10PlusTight[4]);
+        $player->setClosestDefender10PlusTightFgaFrequency($closestDefender10PlusTight[6]);
+        $player->setClosestDefender10PlusTightFgm($closestDefender10PlusTight[7]);
+        $player->setClosestDefender10PlusTightFga($closestDefender10PlusTight[8]);
+        $player->setClosestDefender10PlusTightFgPct($closestDefender10PlusTight[9]);
+        $player->setClosestDefender10PlusTightEfgPct($closestDefender10PlusTight[10]);
+        $player->setClosestDefender10PlusTightFg2aFrequency($closestDefender10PlusTight[11]);
+        $player->setClosestDefender10PlusTightFg2m($closestDefender10PlusTight[12]);
+        $player->setClosestDefender10PlusTightFg2a($closestDefender10PlusTight[13]);
+        $player->setClosestDefender10PlusTightFg2Pct($closestDefender10PlusTight[14]);
+        $player->setClosestDefender10PlusTightFg3aFrequency($closestDefender10PlusTight[15]);
+        $player->setClosestDefender10PlusTightFg3m($closestDefender10PlusTight[16]);
+        $player->setClosestDefender10PlusTightFg3a($closestDefender10PlusTight[17]);
+        $player->setClosestDefender10PlusTightFg3Pct($closestDefender10PlusTight[18]);
+
+        $player->setClosestDefender10PlusOpenRange($closestDefender10PlusOpen[5]);
+        $player->setClosestDefender10PlusOpenGamesPlayed($closestDefender10PlusOpen[3]);
+        $player->setClosestDefender10PlusOpenGames($closestDefender10PlusOpen[4]);
+        $player->setClosestDefender10PlusOpenFgaFrequency($closestDefender10PlusOpen[6]);
+        $player->setClosestDefender10PlusOpenFgm($closestDefender10PlusOpen[7]);
+        $player->setClosestDefender10PlusOpenFga($closestDefender10PlusOpen[8]);
+        $player->setClosestDefender10PlusOpenFgPct($closestDefender10PlusOpen[9]);
+        $player->setClosestDefender10PlusOpenEfgPct($closestDefender10PlusOpen[10]);
+        $player->setClosestDefender10PlusOpenFg2aFrequency($closestDefender10PlusOpen[11]);
+        $player->setClosestDefender10PlusOpenFg2m($closestDefender10PlusOpen[12]);
+        $player->setClosestDefender10PlusOpenFg2a($closestDefender10PlusOpen[13]);
+        $player->setClosestDefender10PlusOpenFg2Pct($closestDefender10PlusOpen[14]);
+        $player->setClosestDefender10PlusOpenFg3aFrequency($closestDefender10PlusOpen[15]);
+        $player->setClosestDefender10PlusOpenFg3m($closestDefender10PlusOpen[16]);
+        $player->setClosestDefender10PlusOpenFg3a($closestDefender10PlusOpen[17]);
+        $player->setClosestDefender10PlusOpenFg3Pct($closestDefender10PlusOpen[18]);
+
+        $player->setClosestDefender10PlusVeryOpenRange($closestDefender10PlusVeryOpen[5]);
+        $player->setClosestDefender10PlusVeryOpenGamesPlayed($closestDefender10PlusVeryOpen[3]);
+        $player->setClosestDefender10PlusVeryOpenGames($closestDefender10PlusVeryOpen[4]);
+        $player->setClosestDefender10PlusVeryOpenFgaFrequency($closestDefender10PlusVeryOpen[6]);
+        $player->setClosestDefender10PlusVeryOpenFgm($closestDefender10PlusVeryOpen[7]);
+        $player->setClosestDefender10PlusVeryOpenFga($closestDefender10PlusVeryOpen[8]);
+        $player->setClosestDefender10PlusVeryOpenFgPct($closestDefender10PlusVeryOpen[9]);
+        $player->setClosestDefender10PlusVeryOpenEfgPct($closestDefender10PlusVeryOpen[10]);
+        $player->setClosestDefender10PlusVeryOpenFg2aFrequency($closestDefender10PlusVeryOpen[11]);
+        $player->setClosestDefender10PlusVeryOpenFg2m($closestDefender10PlusVeryOpen[12]);
+        $player->setClosestDefender10PlusVeryOpenFg2a($closestDefender10PlusVeryOpen[13]);
+        $player->setClosestDefender10PlusVeryOpenFg2Pct($closestDefender10PlusVeryOpen[14]);
+        $player->setClosestDefender10PlusVeryOpenFg3aFrequency($closestDefender10PlusVeryOpen[15]);
+        $player->setClosestDefender10PlusVeryOpenFg3m($closestDefender10PlusVeryOpen[16]);
+        $player->setClosestDefender10PlusVeryOpenFg3a($closestDefender10PlusVeryOpen[17]);
+        $player->setClosestDefender10PlusVeryOpenFg3Pct($closestDefender10PlusVeryOpen[18]);
+
+        
+
+        return $player;
+    }
+
+    public function rebounds($player)
+    {
+        $request = PlayerReboundsStatsRequest::fromArray([
+            'season' => '2017-18',
+            'playerId' => $player->player_id,
+            'teamId' => $player->team_id
+        ]);
+
+        $response = $this->client->request($request);
+
+        $objectResponse = $response->getArrayFromJson();
+        
+        $player->overallRebounding = new stdClass;
+        $overallRebounding = $objectResponse['resultSets'][0]['rowSet'][0];
+
+        $player->rebounding2ptMiss = new stdClass;
+        $missed2pt = $objectResponse['resultSets'][1]['rowSet'][0];
+        
+        $player->rebounding3ptMiss = new stdClass;
+        $missed3pt = $objectResponse['resultSets'][1]['rowSet'][1];
+
+        $player->setOverallReboundingFrequency($overallRebounding[4]);
+        $player->setOverallReboundingOreb($overallRebounding[5]);
+        $player->setOverallReboundingDreb($overallRebounding[6]);
+        $player->setOverallReboundingReb($overallRebounding[7]);
+        $player->setOverallReboundingContestedOreb($overallRebounding[8]);
+        $player->setOverallReboundingDreb($overallRebounding[9]);
+        $player->setOverallReboundingContestedReb($overallRebounding[10]);
+        $player->setOverallReboundingContestedRebPct($overallRebounding[11]);
+        $player->setOverallReboundingUncontestedOreb($overallRebounding[12]);
+        $player->setOverallReboundingUncontestedDreb($overallRebounding[13]);
+        $player->setOverallReboundingUncontestedReb($overallRebounding[14]);
+        $player->setOverallReboundingUncontestedRebPct($overallRebounding[15]);
+
+        $player->set2ptMissReboundingFrequency($missed2pt[5]);
+        $player->set2ptMissReboundingOreb($missed2pt[6]);
+        $player->set2ptMissReboundingDreb($missed2pt[7]);
+        $player->set2ptMissReboundingReb($missed2pt[8]);
+        $player->set2ptMissReboundingContestedOreb($missed2pt[9]);
+        $player->set2ptMissReboundingContestedDreb($missed2pt[10]);
+        $player->set2ptMissReboundingContestedReb($missed2pt[11]);
+        $player->set2ptMissReboundingContestedRebPct($missed2pt[12]);
+        $player->set2ptMissReboundingUncontestedOreb($missed2pt[13]);
+        $player->set2ptMissReboundingUncontestedDreb($missed2pt[14]);
+        $player->set2ptMissReboundingUncontestedReb($missed2pt[15]);
+        $player->set2ptMissReboundingUncontestedRebPct($missed2pt[16]);
+
+        $player->set3ptMissReboundingFrequency($missed3pt[5]);
+        $player->set3ptMissReboundingOreb($missed3pt[6]);
+        $player->set3ptMissReboundingDreb($missed3pt[7]);
+        $player->set3ptMissReboundingReb($missed3pt[8]);
+        $player->set3ptMissReboundingContestedOreb($missed3pt[9]);
+        $player->set3ptMissReboundingContestedDreb($missed3pt[10]);
+        $player->set3ptMissReboundingContestedReb($missed3pt[11]);
+        $player->set3ptMissReboundingContestedRebPct($missed3pt[12]);
+        $player->set3ptMissReboundingUncontestedOreb($missed3pt[13]);
+        $player->set3ptMissReboundingUncontestedDreb($missed3pt[14]);
+        $player->set3ptMissReboundingUncontestedReb($missed3pt[15]);
+        $player->set3ptMissReboundingUncontestedRebPct($missed3pt[16]);
 
         return $player;
     }

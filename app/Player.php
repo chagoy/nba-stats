@@ -18,57 +18,57 @@ class Player extends Model
 
     public function setBirthdate($birthdate)
     {
-        $this->birthdate = $birthdate;
+        $this->basicInfo->birthdate = $birthdate;
     }
 
     public function setSchool($school)
     {
-        $this->school = $school;
+        $this->basicInfo->school = $school;
     }
 
     public function setCountry($country) 
     {
-        $this->country = $country;
+        $this->basicInfo->country = $country;
     }
 
     public function setHeight($height)
     {
-        $this->height = $height;
+        $this->basicInfo->height = $height;
     }
 
     public function setWeight($weight)
     {
-        $this->weight = $weight;
+        $this->basicInfo->weight = $weight;
     }
 
     public function setPosition($position)
     {
-        $this->position = $position;
+        $this->basicInfo->position = $position;
     }
     
     public function setTeamName($name)
     {
-        $this->teamName = $name;
+        $this->basicInfo->teamName = $name;
     }
 
     public function setTeamCity($city)
     {
-        $this->teamCity = $city;
+        $this->basicInfo->teamCity = $city;
     }
 
     public function setDraftYear($year)
     {
-        $this->draftYear = $year;
+        $this->basicInfo->draftYear = $year;
     }
 
     public function setDraftRound($round)
     {
-        $this->draftRound = $round;
+        $this->basicInfo->draftRound = $round;
     }
 
     public function setDraftNumber($number)
     {
-        $this->draftNumber = $number;
+        $this->basicInfo->draftNumber = $number;
     }
 
     public function setCareerStats($stats)
@@ -78,2197 +78,2697 @@ class Player extends Model
 
     public function setLast5Wins($stats)
     {
-        $this->last5Wins = $stats;
+        $this->last5->wins = $stats;
     }
 
     public function setLast5Losses($stats)
     {
-        $this->last5Losses = $stats;
+        $this->last5->losses = $stats;
     }
 
     public function setLast5Min($stats)
     {
-        $this->last5Min = $stats;
+        $this->last5->min = $stats;
     }
 
     public function setLast5Fgm($stats)
     {
-        $this->last5Fgm = $stats;
+        $this->last5->fgm = $stats;
     }
 
     public function setLast5Fga($stats)
     {
-        $this->last5Fga = $stats;
+        $this->last5->fga = $stats;
     }
 
     public function setLast5Fgpct($stats)
     {
-        $this->last5Fgpct = $stats;
+        $this->last5->fgpct = $stats;
     }
 
     public function setLast5Fg3m($stats)
     {
-        $this->last5Fgm = $stats;
+        $this->last5->fgm = $stats;
     }
 
     public function setLast5Fg3a($stats)
     {
-        $this->last5Fga = $stats;
+        $this->last5->fga = $stats;
     }
 
     public function setLast5Fg3pct($stats)
     {
-        $this->last5Fgpct = $stats;
+        $this->last5->fgpct = $stats;
     }
 
     public function setLast5Ftm($stats)
     {
-        $this->last5Ftm = $stats;
+        $this->last5->ftm = $stats;
     }
 
     public function setLast5Fta($stats)
     {
-        $this->last5Fta = $stats;
+        $this->last5->fta = $stats;
     }
 
     public function setLast5Ftpct($stats)
     {
-        $this->last5Ftpct = $stats;
+        $this->last5->ftpct = $stats;
     }
 
     public function setLast5Oreb($stats)
     {
-        $this->last5Oreb = $stats;
+        $this->last5->oreb = $stats;
     }
 
     public function setLast5Dreb($stats)
     {
-        $this->last5Dreb = $stats;
+        $this->last5->dreb = $stats;
     }
 
     public function setLast5Reb($stats)
     {
-        $this->last5Reb = $stats;
+        $this->last5->reb = $stats;
     }
 
     public function setLast5Ast($stats)
     {
-        $this->last5Ast = $stats;
+        $this->last5->ast = $stats;
     }
 
     public function setLast5Tov($stats)
     {
-        $this->last5Tov = $stats;
+        $this->last5->tov = $stats;
     }
 
     public function setLast5Stl($stats)
     {
-        $this->last5Stl = $stats;
+        $this->last5->stl = $stats;
     }
 
     public function setLast5Blk($stats)
     {
-        $this->last5Blk = $stats;
+        $this->last5->blk = $stats;
     }
 
     public function setLast5Blka($stats)
     {
-        $this->last5Blka = $stats;
+        $this->last5->blka = $stats;
     }
 
     public function setLast5Pf($stats)
     {
-        $this->last5Pf = $stats;
+        $this->last5->pf = $stats;
     }
 
     public function setLast5Pfd($stats)
     {
-        $this->last5Pfd = $stats;
+        $this->last5->pfd = $stats;
     }
 
     public function setLast5Pts($stats)
     {
-        $this->last5Pts = $stats;
+        $this->last5->pts = $stats;
     }
 
     public function setLast5Plusminus($stats)
     {
-        $this->last5Plusminus = $stats;
+        $this->last5->plusminus = $stats;
     }
 
     public function setHomeWins($stats)
     {
-        $this->homeWins = $stats;
+        $this->home->wins = $stats;
     }
 
     public function setHomeLosses($stats)
     {
-        $this->homeLosses = $stats;
+        $this->home->losses = $stats;
     }
 
     public function setHomeMin($stats)
     {
-        $this->homeMin = $stats;
+        $this->home->min = $stats;
     }
 
     public function setHomeFgm($stats)
     {
-        $this->homeFgm = $stats;
+        $this->home->fgm = $stats;
     }
 
     public function setHomeFga($stats)
     {
-        $this->homeFga = $stats;
+        $this->home->fga = $stats;
     }
 
     public function setHomeFgpct($stats)
     {
-        $this->homeFgpct = $stats;
+        $this->home->fgpct = $stats;
     }
 
     public function setHomeFg3m($stats)
     {
-        $this->homeFgm = $stats;
+        $this->home->fgm = $stats;
     }
 
     public function setHomeFg3a($stats)
     {
-        $this->homeFga = $stats;
+        $this->home->fga = $stats;
     }
 
     public function setHomeFg3pct($stats)
     {
-        $this->homeFgpct = $stats;
+        $this->home->fgpct = $stats;
     }
 
     public function setHomeFtm($stats)
     {
-        $this->homeFtm = $stats;
+        $this->home->ftm = $stats;
     }
 
     public function setHomeFta($stats)
     {
-        $this->homeFta = $stats;
+        $this->home->fta = $stats;
     }
 
     public function setHomeFtpct($stats)
     {
-        $this->homeFtpct = $stats;
+        $this->home->ftpct = $stats;
     }
 
     public function setHomeOreb($stats)
     {
-        $this->homeOreb = $stats;
+        $this->home->oreb = $stats;
     }
 
     public function setHomeDreb($stats)
     {
-        $this->homeDreb = $stats;
+        $this->home->dreb = $stats;
     }
 
     public function setHomeReb($stats)
     {
-        $this->homeReb = $stats;
+        $this->home->reb = $stats;
     }
 
     public function setHomeAst($stats)
     {
-        $this->homeAst = $stats;
+        $this->home->ast = $stats;
     }
 
     public function setHomeTov($stats)
     {
-        $this->homeTov = $stats;
+        $this->home->tov = $stats;
     }
 
     public function setHomeStl($stats)
     {
-        $this->homeStl = $stats;
+        $this->home->stl = $stats;
     }
 
     public function setHomeBlk($stats)
     {
-        $this->homeBlk = $stats;
+        $this->home->blk = $stats;
     }
 
     public function setHomeBlka($stats)
     {
-        $this->homeBlka = $stats;
+        $this->home->blka = $stats;
     }
 
     public function setHomePf($stats)
     {
-        $this->homePf = $stats;
+        $this->home->pf = $stats;
     }
 
     public function setHomePfd($stats)
     {
-        $this->homePfd = $stats;
+        $this->home->pfd = $stats;
     }
 
     public function setHomePts($stats)
     {
-        $this->homePts = $stats;
+        $this->home->pts = $stats;
     }
 
     public function setHomePlusminus($stats)
     {
-        $this->homePlusminus = $stats;
+        $this->home->plusminus = $stats;
     }
 
     public function setAwayWins($stats)
     {
-        $this->awayWins = $stats;
+        $this->away->wins = $stats;
     }
 
     public function setAwayLosses($stats)
     {
-        $this->awayLosses = $stats;
+        $this->away->losses = $stats;
     }
 
     public function setAwayMin($stats)
     {
-        $this->awayMin = $stats;
+        $this->away->min = $stats;
     }
 
     public function setAwayFgm($stats)
     {
-        $this->awayFgm = $stats;
+        $this->away->fgm = $stats;
     }
 
     public function setAwayFga($stats)
     {
-        $this->awayFga = $stats;
+        $this->away->fga = $stats;
     }
 
     public function setAwayFgpct($stats)
     {
-        $this->awayFgpct = $stats;
+        $this->away->fgpct = $stats;
     }
 
     public function setAwayFg3m($stats)
     {
-        $this->awayFgm = $stats;
+        $this->away->fgm = $stats;
     }
 
     public function setAwayFg3a($stats)
     {
-        $this->awayFga = $stats;
+        $this->away->fga = $stats;
     }
 
     public function setAwayFg3pct($stats)
     {
-        $this->awayFgpct = $stats;
+        $this->away->fgpct = $stats;
     }
 
     public function setAwayFtm($stats)
     {
-        $this->awayFtm = $stats;
+        $this->away->ftm = $stats;
     }
 
     public function setAwayFta($stats)
     {
-        $this->awayFta = $stats;
+        $this->away->fta = $stats;
     }
 
     public function setAwayFtpct($stats)
     {
-        $this->awayFtpct = $stats;
+        $this->away->ftpct = $stats;
     }
 
     public function setAwayOreb($stats)
     {
-        $this->awayOreb = $stats;
+        $this->away->oreb = $stats;
     }
 
     public function setAwayDreb($stats)
     {
-        $this->awayDreb = $stats;
+        $this->away->dreb = $stats;
     }
 
     public function setAwayReb($stats)
     {
-        $this->awayReb = $stats;
+        $this->away->reb = $stats;
     }
 
     public function setAwayAst($stats)
     {
-        $this->awayAst = $stats;
+        $this->away->ast = $stats;
     }
 
     public function setAwayTov($stats)
     {
-        $this->awayTov = $stats;
+        $this->away->tov = $stats;
     }
 
     public function setAwayStl($stats)
     {
-        $this->awayStl = $stats;
+        $this->away->stl = $stats;
     }
 
     public function setAwayBlk($stats)
     {
-        $this->awayBlk = $stats;
+        $this->away->blk = $stats;
     }
 
     public function setAwayBlka($stats)
     {
-        $this->awayBlka = $stats;
+        $this->away->blka = $stats;
     }
 
     public function setAwayPf($stats)
     {
-        $this->awayPf = $stats;
+        $this->away->pf = $stats;
     }
 
     public function setAwayPfd($stats)
     {
-        $this->awayPfd = $stats;
+        $this->away->pfd = $stats;
     }
 
     public function setAwayPts($stats)
     {
-        $this->awayPts = $stats;
+        $this->away->pts = $stats;
     }
 
     public function setAwayPlusminus($stats)
     {
-        $this->awayPlusminus = $stats;
+        $this->away->plusminus = $stats;
     }
 
     public function setInWinWins($stats)
     {
-        $this->winWins = $stats;
+        $this->win->wins = $stats;
     }
 
     public function setInWinLosses($stats)
     {
-        $this->winLosses = $stats;
+        $this->win->losses = $stats;
     }
 
     public function setInWinMin($stats)
     {
-        $this->winMin = $stats;
+        $this->win->min = $stats;
     }
 
     public function setInWinFgm($stats)
     {
-        $this->winFgm = $stats;
+        $this->win->fgm = $stats;
     }
 
     public function setInWinFga($stats)
     {
-        $this->winFga = $stats;
+        $this->win->fga = $stats;
     }
 
     public function setInWinFgpct($stats)
     {
-        $this->winFgpct = $stats;
+        $this->win->fgpct = $stats;
     }
 
     public function setInWinFg3m($stats)
     {
-        $this->winFgm = $stats;
+        $this->win->fgm = $stats;
     }
 
     public function setInWinFg3a($stats)
     {
-        $this->winFga = $stats;
+        $this->win->fga = $stats;
     }
 
     public function setInWinFg3pct($stats)
     {
-        $this->winFgpct = $stats;
+        $this->win->fgpct = $stats;
     }
 
     public function setInWinFtm($stats)
     {
-        $this->winFtm = $stats;
+        $this->win->ftm = $stats;
     }
 
     public function setInWinFta($stats)
     {
-        $this->winFta = $stats;
+        $this->win->fta = $stats;
     }
 
     public function setInWinFtpct($stats)
     {
-        $this->winFtpct = $stats;
+        $this->win->ftpct = $stats;
     }
 
     public function setInWinOreb($stats)
     {
-        $this->winOreb = $stats;
+        $this->win->oreb = $stats;
     }
 
     public function setInWinDreb($stats)
     {
-        $this->winDreb = $stats;
+        $this->win->dreb = $stats;
     }
 
     public function setInWinReb($stats)
     {
-        $this->winReb = $stats;
+        $this->win->reb = $stats;
     }
 
     public function setInWinAst($stats)
     {
-        $this->winAst = $stats;
+        $this->win->ast = $stats;
     }
 
     public function setInWinTov($stats)
     {
-        $this->winTov = $stats;
+        $this->win->tov = $stats;
     }
 
     public function setInWinStl($stats)
     {
-        $this->winStl = $stats;
+        $this->win->stl = $stats;
     }
 
     public function setInWinBlk($stats)
     {
-        $this->winBlk = $stats;
+        $this->win->blk = $stats;
     }
 
     public function setInWinBlka($stats)
     {
-        $this->winBlka = $stats;
+        $this->win->blka = $stats;
     }
 
     public function setInWinPf($stats)
     {
-        $this->winPf = $stats;
+        $this->win->pf = $stats;
     }
 
     public function setInWinPfd($stats)
     {
-        $this->winPfd = $stats;
+        $this->win->pfd = $stats;
     }
 
     public function setInWinPts($stats)
     {
-        $this->winPts = $stats;
+        $this->win->pts = $stats;
     }
 
     public function setInWinPlusminus($stats)
     {
-        $this->winPlusminus = $stats;
+        $this->win->plusminus = $stats;
     }
 
     public function setInLossWins($stats)
     {
-        $this->lossWins = $stats;
+        $this->loss->wins = $stats;
     }
 
     public function setInLossLosses($stats)
     {
-        $this->lossLosses = $stats;
+        $this->loss->losses = $stats;
     }
 
     public function setInLossMin($stats)
     {
-        $this->lossMin = $stats;
+        $this->loss->min = $stats;
     }
 
     public function setInLossFgm($stats)
     {
-        $this->lossFgm = $stats;
+        $this->loss->fgm = $stats;
     }
 
     public function setInLossFga($stats)
     {
-        $this->lossFga = $stats;
+        $this->loss->fga = $stats;
     }
 
     public function setInLossFgpct($stats)
     {
-        $this->lossFgpct = $stats;
+        $this->loss->fgpct = $stats;
     }
 
     public function setInLossFg3m($stats)
     {
-        $this->lossFgm = $stats;
+        $this->loss->fgm = $stats;
     }
 
     public function setInLossFg3a($stats)
     {
-        $this->lossFga = $stats;
+        $this->loss->fga = $stats;
     }
 
     public function setInLossFg3pct($stats)
     {
-        $this->lossFgpct = $stats;
+        $this->loss->fgpct = $stats;
     }
 
     public function setInLossFtm($stats)
     {
-        $this->lossFtm = $stats;
+        $this->loss->ftm = $stats;
     }
 
     public function setInLossFta($stats)
     {
-        $this->lossFta = $stats;
+        $this->loss->fta = $stats;
     }
 
     public function setInLossFtpct($stats)
     {
-        $this->lossFtpct = $stats;
+        $this->loss->ftpct = $stats;
     }
 
     public function setInLossOreb($stats)
     {
-        $this->lossOreb = $stats;
+        $this->loss->oreb = $stats;
     }
 
     public function setInLossDreb($stats)
     {
-        $this->lossDreb = $stats;
+        $this->loss->dreb = $stats;
     }
 
     public function setInLossReb($stats)
     {
-        $this->lossReb = $stats;
+        $this->loss->reb = $stats;
     }
 
     public function setInLossAst($stats)
     {
-        $this->lossAst = $stats;
+        $this->loss->ast = $stats;
     }
 
     public function setInLossTov($stats)
     {
-        $this->lossTov = $stats;
+        $this->loss->tov = $stats;
     }
 
     public function setInLossStl($stats)
     {
-        $this->lossStl = $stats;
+        $this->loss->stl = $stats;
     }
 
     public function setInLossBlk($stats)
     {
-        $this->lossBlk = $stats;
+        $this->loss->blk = $stats;
     }
 
     public function setInLossBlka($stats)
     {
-        $this->lossBlka = $stats;
+        $this->loss->blka = $stats;
     }
 
     public function setInLossPf($stats)
     {
-        $this->lossPf = $stats;
+        $this->loss->pf = $stats;
     }
 
     public function setInLossPfd($stats)
     {
-        $this->lossPfd = $stats;
+        $this->loss->pfd = $stats;
     }
 
     public function setInLossPts($stats)
     {
-        $this->lossPts = $stats;
+        $this->loss->pts = $stats;
     }
 
     public function setInLossPlusminus($stats)
     {
-        $this->lossPlusminus = $stats;
+        $this->loss->plusminus = $stats;
     }
 
     public function setNoRestWins($stats)
     {
-        $this->noRestWins = $stats;
+        $this->noRest->wins = $stats;
     }
 
     public function setNoRestLosses($stats)
     {
-        $this->noRestLosses = $stats;
+        $this->noRest->losses = $stats;
     }
 
     public function setNoRestMin($stats)
     {
-        $this->noRestMin = $stats;
+        $this->noRest->min = $stats;
     }
 
     public function setNoRestFgm($stats)
     {
-        $this->noRestFgm = $stats;
+        $this->noRest->fgm = $stats;
     }
 
     public function setNoRestFga($stats)
     {
-        $this->noRestFga = $stats;
+        $this->noRest->fga = $stats;
     }
 
     public function setNoRestFgpct($stats)
     {
-        $this->noRestFgpct = $stats;
+        $this->noRest->fgpct = $stats;
     }
 
     public function setNoRestFg3m($stats)
     {
-        $this->noRestFgm = $stats;
+        $this->noRest->fgm = $stats;
     }
 
     public function setNoRestFg3a($stats)
     {
-        $this->noRestFga = $stats;
+        $this->noRest->fga = $stats;
     }
 
     public function setNoRestFg3pct($stats)
     {
-        $this->noRestFgpct = $stats;
+        $this->noRest->fgpct = $stats;
     }
 
     public function setNoRestFtm($stats)
     {
-        $this->noRestFtm = $stats;
+        $this->noRest->ftm = $stats;
     }
 
     public function setNoRestFta($stats)
     {
-        $this->noRestFta = $stats;
+        $this->noRest->fta = $stats;
     }
 
     public function setNoRestFtpct($stats)
     {
-        $this->noRestFtpct = $stats;
+        $this->noRest->ftpct = $stats;
     }
 
     public function setNoRestOreb($stats)
     {
-        $this->noRestOreb = $stats;
+        $this->noRest->oreb = $stats;
     }
 
     public function setNoRestDreb($stats)
     {
-        $this->noRestDreb = $stats;
+        $this->noRest->dreb = $stats;
     }
 
     public function setNoRestReb($stats)
     {
-        $this->noRestReb = $stats;
+        $this->noRest->reb = $stats;
     }
 
     public function setNoRestAst($stats)
     {
-        $this->noRestAst = $stats;
+        $this->noRest->ast = $stats;
     }
 
     public function setNoRestTov($stats)
     {
-        $this->noRestTov = $stats;
+        $this->noRest->tov = $stats;
     }
 
     public function setNoRestStl($stats)
     {
-        $this->noRestStl = $stats;
+        $this->noRest->stl = $stats;
     }
 
     public function setNoRestBlk($stats)
     {
-        $this->noRestBlk = $stats;
+        $this->noRest->blk = $stats;
     }
 
     public function setNoRestBlka($stats)
     {
-        $this->noRestBlka = $stats;
+        $this->noRest->blka = $stats;
     }
 
     public function setNoRestPf($stats)
     {
-        $this->noRestPf = $stats;
+        $this->noRest->pf = $stats;
     }
 
     public function setNoRestPfd($stats)
     {
-        $this->noRestPfd = $stats;
+        $this->noRest->pfd = $stats;
     }
 
     public function setNoRestPts($stats)
     {
-        $this->noRestPts = $stats;
+        $this->noRest->pts = $stats;
     }
 
     public function setNoRestPlusminus($stats)
     {
-        $this->noRestPlusminus = $stats;
+        $this->noRest->plusminus = $stats;
     }
 
     public function setOneDayRestWins($stats)
     {
-        $this->oneDayRestWins = $stats;
+        $this->oneDayRest->wins = $stats;
     }
 
     public function setOneDayRestLosses($stats)
     {
-        $this->oneDayRestLosses = $stats;
+        $this->oneDayRest->losses = $stats;
     }
 
     public function setOneDayRestMin($stats)
     {
-        $this->oneDayRestMin = $stats;
+        $this->oneDayRest->min = $stats;
     }
 
     public function setOneDayRestFgm($stats)
     {
-        $this->oneDayRestFgm = $stats;
+        $this->oneDayRest->fgm = $stats;
     }
 
     public function setOneDayRestFga($stats)
     {
-        $this->oneDayRestFga = $stats;
+        $this->oneDayRest->fga = $stats;
     }
 
     public function setOneDayRestFgpct($stats)
     {
-        $this->oneDayRestFgpct = $stats;
+        $this->oneDayRest->fgpct = $stats;
     }
 
     public function setOneDayRestFg3m($stats)
     {
-        $this->oneDayRestFgm = $stats;
+        $this->oneDayRest->fgm = $stats;
     }
 
     public function setOneDayRestFg3a($stats)
     {
-        $this->oneDayRestFga = $stats;
+        $this->oneDayRest->fga = $stats;
     }
 
     public function setOneDayRestFg3pct($stats)
     {
-        $this->oneDayRestFgpct = $stats;
+        $this->oneDayRest->fgpct = $stats;
     }
 
     public function setOneDayRestFtm($stats)
     {
-        $this->oneDayRestFtm = $stats;
+        $this->oneDayRest->ftm = $stats;
     }
 
     public function setOneDayRestFta($stats)
     {
-        $this->oneDayRestFta = $stats;
+        $this->oneDayRest->fta = $stats;
     }
 
     public function setOneDayRestFtpct($stats)
     {
-        $this->oneDayRestFtpct = $stats;
+        $this->oneDayRest->ftpct = $stats;
     }
 
     public function setOneDayRestOreb($stats)
     {
-        $this->oneDayRestOreb = $stats;
+        $this->oneDayRest->oreb = $stats;
     }
 
     public function setOneDayRestDreb($stats)
     {
-        $this->oneDayRestDreb = $stats;
+        $this->oneDayRest->dreb = $stats;
     }
 
     public function setOneDayRestReb($stats)
     {
-        $this->oneDayRestReb = $stats;
+        $this->oneDayRest->reb = $stats;
     }
 
     public function setOneDayRestAst($stats)
     {
-        $this->oneDayRestAst = $stats;
+        $this->oneDayRest->ast = $stats;
     }
 
     public function setOneDayRestTov($stats)
     {
-        $this->oneDayRestTov = $stats;
+        $this->oneDayRest->tov = $stats;
     }
 
     public function setOneDayRestStl($stats)
     {
-        $this->oneDayRestStl = $stats;
+        $this->oneDayRest->stl = $stats;
     }
 
     public function setOneDayRestBlk($stats)
     {
-        $this->oneDayRestBlk = $stats;
+        $this->oneDayRest->blk = $stats;
     }
 
     public function setOneDayRestBlka($stats)
     {
-        $this->oneDayRestBlka = $stats;
+        $this->oneDayRest->blka = $stats;
     }
 
     public function setOneDayRestPf($stats)
     {
-        $this->oneDayRestPf = $stats;
+        $this->oneDayRest->pf = $stats;
     }
 
     public function setOneDayRestPfd($stats)
     {
-        $this->oneDayRestPfd = $stats;
+        $this->oneDayRest->pfd = $stats;
     }
 
     public function setOneDayRestPts($stats)
     {
-        $this->oneDayRestPts = $stats;
+        $this->oneDayRest->pts = $stats;
     }
 
     public function setOneDayRestPlusminus($stats)
     {
-        $this->oneDayRestPlusminus = $stats;
+        $this->oneDayRest->plusminus = $stats;
     }
 
     public function setTwoDayRestWins($stats)
     {
-        $this->twoDayRestWins = $stats;
+        $this->twoDaysRest->wins = $stats;
     }
 
     public function setTwoDayRestLosses($stats)
     {
-        $this->twoDayRestLosses = $stats;
+        $this->twoDaysRest->losses = $stats;
     }
 
     public function setTwoDayRestMin($stats)
     {
-        $this->twoDayRestMin = $stats;
+        $this->twoDaysRest->min = $stats;
     }
 
     public function setTwoDayRestFgm($stats)
     {
-        $this->twoDayRestFgm = $stats;
+        $this->twoDaysRest->fgm = $stats;
     }
 
     public function setTwoDayRestFga($stats)
     {
-        $this->twoDayRestFga = $stats;
+        $this->twoDaysRest->fga = $stats;
     }
 
     public function setTwoDayRestFgpct($stats)
     {
-        $this->twoDayRestFgpct = $stats;
+        $this->twoDaysRest->fgpct = $stats;
     }
 
     public function setTwoDayRestFg3m($stats)
     {
-        $this->twoDayRestFgm = $stats;
+        $this->twoDaysRest->fgm = $stats;
     }
 
     public function setTwoDayRestFg3a($stats)
     {
-        $this->twoDayRestFga = $stats;
+        $this->twoDaysRest->fga = $stats;
     }
 
     public function setTwoDayRestFg3pct($stats)
     {
-        $this->twoDayRestFgpct = $stats;
+        $this->twoDaysRest->fgpct = $stats;
     }
 
     public function setTwoDayRestFtm($stats)
     {
-        $this->twoDayRestFtm = $stats;
+        $this->twoDaysRest->ftm = $stats;
     }
 
     public function setTwoDayRestFta($stats)
     {
-        $this->twoDayRestFta = $stats;
+        $this->twoDaysRest->fta = $stats;
     }
 
     public function setTwoDayRestFtpct($stats)
     {
-        $this->twoDayRestFtpct = $stats;
+        $this->twoDaysRest->ftpct = $stats;
     }
 
     public function setTwoDayRestOreb($stats)
     {
-        $this->twoDayRestOreb = $stats;
+        $this->twoDaysRest->oreb = $stats;
     }
 
     public function setTwoDayRestDreb($stats)
     {
-        $this->twoDayRestDreb = $stats;
+        $this->twoDaysRest->dreb = $stats;
     }
 
     public function setTwoDayRestReb($stats)
     {
-        $this->twoDayRestReb = $stats;
+        $this->twoDaysRest->reb = $stats;
     }
 
     public function setTwoDayRestAst($stats)
     {
-        $this->twoDayRestAst = $stats;
+        $this->twoDaysRest->ast = $stats;
     }
 
     public function setTwoDayRestTov($stats)
     {
-        $this->twoDayRestTov = $stats;
+        $this->twoDaysRest->tov = $stats;
     }
 
     public function setTwoDayRestStl($stats)
     {
-        $this->twoDayRestStl = $stats;
+        $this->twoDaysRest->stl = $stats;
     }
 
     public function setTwoDayRestBlk($stats)
     {
-        $this->twoDayRestBlk = $stats;
+        $this->twoDaysRest->blk = $stats;
     }
 
     public function setTwoDayRestBlka($stats)
     {
-        $this->twoDayRestBlka = $stats;
+        $this->twoDaysRest->blka = $stats;
     }
 
     public function setTwoDayRestPf($stats)
     {
-        $this->twoDayRestPf = $stats;
+        $this->twoDaysRest->pf = $stats;
     }
 
     public function setTwoDayRestPfd($stats)
     {
-        $this->twoDayRestPfd = $stats;
+        $this->twoDaysRest->pfd = $stats;
     }
 
     public function setTwoDayRestPts($stats)
     {
-        $this->twoDayRestPts = $stats;
+        $this->twoDaysRest->pts = $stats;
     }
 
     public function setTwoDayRestPlusminus($stats)
     {
-        $this->twoDayRestPlusminus = $stats;
+        $this->twoDaysRest->plusminus = $stats;
     }
 
     public function setThreeDayRestWins($stats)
     {
-        $this->threeDayRestWins = $stats;
+        $this->threeDaysRest->wins = $stats;
     }
 
     public function setThreeDayRestLosses($stats)
     {
-        $this->threeDayRestLosses = $stats;
+        $this->threeDaysRest->losses = $stats;
     }
 
     public function setThreeDayRestMin($stats)
     {
-        $this->threeDayRestMin = $stats;
+        $this->threeDaysRest->min = $stats;
     }
 
     public function setThreeDayRestFgm($stats)
     {
-        $this->threeDayRestFgm = $stats;
+        $this->threeDaysRest->fgm = $stats;
     }
 
     public function setThreeDayRestFga($stats)
     {
-        $this->threeDayRestFga = $stats;
+        $this->threeDaysRest->fga = $stats;
     }
 
     public function setThreeDayRestFgpct($stats)
     {
-        $this->threeDayRestFgpct = $stats;
+        $this->threeDaysRest->fgpct = $stats;
     }
 
     public function setThreeDayRestFg3m($stats)
     {
-        $this->threeDayRestFgm = $stats;
+        $this->threeDaysRest->fgm = $stats;
     }
 
     public function setThreeDayRestFg3a($stats)
     {
-        $this->threeDayRestFga = $stats;
+        $this->threeDaysRest->fga = $stats;
     }
 
     public function setThreeDayRestFg3pct($stats)
     {
-        $this->threeDayRestFgpct = $stats;
+        $this->threeDaysRest->fgpct = $stats;
     }
 
     public function setThreeDayRestFtm($stats)
     {
-        $this->threeDayRestFtm = $stats;
+        $this->threeDaysRest->ftm = $stats;
     }
 
     public function setThreeDayRestFta($stats)
     {
-        $this->threeDayRestFta = $stats;
+        $this->threeDaysRest->fta = $stats;
     }
 
     public function setThreeDayRestFtpct($stats)
     {
-        $this->threeDayRestFtpct = $stats;
+        $this->threeDaysRest->ftpct = $stats;
     }
 
     public function setThreeDayRestOreb($stats)
     {
-        $this->threeDayRestOreb = $stats;
+        $this->threeDaysRest->oreb = $stats;
     }
 
     public function setThreeDayRestDreb($stats)
     {
-        $this->threeDayRestDreb = $stats;
+        $this->threeDaysRest->dreb = $stats;
     }
 
     public function setThreeDayRestReb($stats)
     {
-        $this->threeDayRestReb = $stats;
+        $this->threeDaysRest->reb = $stats;
     }
 
     public function setThreeDayRestAst($stats)
     {
-        $this->threeDayRestAst = $stats;
+        $this->threeDaysRest->ast = $stats;
     }
 
     public function setThreeDayRestTov($stats)
     {
-        $this->threeDayRestTov = $stats;
+        $this->threeDaysRest->tov = $stats;
     }
 
     public function setThreeDayRestStl($stats)
     {
-        $this->threeDayRestStl = $stats;
+        $this->threeDaysRest->stl = $stats;
     }
 
     public function setThreeDayRestBlk($stats)
     {
-        $this->threeDayRestBlk = $stats;
+        $this->threeDaysRest->blk = $stats;
     }
 
     public function setThreeDayRestBlka($stats)
     {
-        $this->threeDayRestBlka = $stats;
+        $this->threeDaysRest->blka = $stats;
     }
 
     public function setThreeDayRestPf($stats)
     {
-        $this->threeDayRestPf = $stats;
+        $this->threeDaysRest->pf = $stats;
     }
 
     public function setThreeDayRestPfd($stats)
     {
-        $this->threeDayRestPfd = $stats;
+        $this->threeDaysRest->pfd = $stats;
     }
 
     public function setThreeDayRestPts($stats)
     {
-        $this->threeDayRestPts = $stats;
+        $this->threeDaysRest->pts = $stats;
     }
 
     public function setThreeDayRestPlusminus($stats)
     {
-        $this->threeDayRestPlusminus = $stats;
+        $this->threeDaysRest->plusminus = $stats;
     }
 
     public function setFourDayRestWins($stats)
     {
-        $this->fourDayRestWins = $stats;
+        $this->fourDaysRest->wins = $stats;
     }
 
     public function setFourDayRestLosses($stats)
     {
-        $this->fourDayRestLosses = $stats;
+        $this->fourDaysRest->losses = $stats;
     }
 
     public function setFourDayRestMin($stats)
     {
-        $this->fourDayRestMin = $stats;
+        $this->fourDaysRest->min = $stats;
     }
 
     public function setFourDayRestFgm($stats)
     {
-        $this->fourDayRestFgm = $stats;
+        $this->fourDaysRest->fgm = $stats;
     }
 
     public function setFourDayRestFga($stats)
     {
-        $this->fourDayRestFga = $stats;
+        $this->fourDaysRest->fga = $stats;
     }
 
     public function setFourDayRestFgpct($stats)
     {
-        $this->fourDayRestFgpct = $stats;
+        $this->fourDaysRest->fgpct = $stats;
     }
 
     public function setFourDayRestFg3m($stats)
     {
-        $this->fourDayRestFgm = $stats;
+        $this->fourDaysRest->fgm = $stats;
     }
 
     public function setFourDayRestFg3a($stats)
     {
-        $this->fourDayRestFga = $stats;
+        $this->fourDaysRest->fga = $stats;
     }
 
     public function setFourDayRestFg3pct($stats)
     {
-        $this->fourDayRestFgpct = $stats;
+        $this->fourDaysRest->fgpct = $stats;
     }
 
     public function setFourDayRestFtm($stats)
     {
-        $this->fourDayRestFtm = $stats;
+        $this->fourDaysRest->ftm = $stats;
     }
 
     public function setFourDayRestFta($stats)
     {
-        $this->fourDayRestFta = $stats;
+        $this->fourDaysRest->fta = $stats;
     }
 
     public function setFourDayRestFtpct($stats)
     {
-        $this->fourDayRestFtpct = $stats;
+        $this->fourDaysRest->ftpct = $stats;
     }
 
     public function setFourDayRestOreb($stats)
     {
-        $this->fourDayRestOreb = $stats;
+        $this->fourDaysRest->oreb = $stats;
     }
 
     public function setFourDayRestDreb($stats)
     {
-        $this->fourDayRestDreb = $stats;
+        $this->fourDaysRest->dreb = $stats;
     }
 
     public function setFourDayRestReb($stats)
     {
-        $this->fourDayRestReb = $stats;
+        $this->fourDaysRest->reb = $stats;
     }
 
     public function setFourDayRestAst($stats)
     {
-        $this->fourDayRestAst = $stats;
+        $this->fourDaysRest->ast = $stats;
     }
 
     public function setFourDayRestTov($stats)
     {
-        $this->fourDayRestTov = $stats;
+        $this->fourDaysRest->tov = $stats;
     }
 
     public function setFourDayRestStl($stats)
     {
-        $this->fourDayRestStl = $stats;
+        $this->fourDaysRest->stl = $stats;
     }
 
     public function setFourDayRestBlk($stats)
     {
-        $this->fourDayRestBlk = $stats;
+        $this->fourDaysRest->blk = $stats;
     }
 
     public function setFourDayRestBlka($stats)
     {
-        $this->fourDayRestBlka = $stats;
+        $this->fourDaysRest->blka = $stats;
     }
 
     public function setFourDayRestPf($stats)
     {
-        $this->fourDayRestPf = $stats;
+        $this->fourDaysRest->pf = $stats;
     }
 
     public function setFourDayRestPfd($stats)
     {
-        $this->fourDayRestPfd = $stats;
+        $this->fourDaysRest->pfd = $stats;
     }
 
     public function setFourDayRestPts($stats)
     {
-        $this->fourDayRestPts = $stats;
+        $this->fourDaysRest->pts = $stats;
     }
 
     public function setFourDayRestPlusminus($stats)
     {
-        $this->fourDayRestPlusminus = $stats;
+        $this->fourDaysRest->plusminus = $stats;
     }
 
     public function setGeneralShotsGamesPlayed($stats)
     {
-        $this->generalShotsGamesPlayed = $stats;
+        $this->generalShotData->GamesPlayed = $stats;
     }
 
     public function setGeneralShotsGames($stats)
     {
-        $this->generalShotsGames = $stats;
+        $this->generalShotData->Games = $stats;
     }
 
     public function setGeneralShotsFgaFrequency($stats)
     {
-        $this->generalShotsFgaFrequency = $stats;
+        $this->generalShotData->FgaFrequency = $stats;
     }
 
     public function setGeneralShotsFgm($stats)
     {
-        $this->generalShotsFgm = $stats;
+        $this->generalShotData->Fgm = $stats;
     }
 
     public function setGeneralShotsFga($stats)
     {
-        $this->generalShotsFga = $stats;
+        $this->generalShotData->Fga = $stats;
     }
 
     public function setGeneralShotsFgPct($stats)
     {
-        $this->generalShotsFgPct = $stats;
+        $this->generalShotData->FgPct = $stats;
     }
 
     public function setGeneralShotsEfgPct($stats)
     {
-        $this->generalShotsEfgPct = $stats;
+        $this->generalShotData->EfgPct = $stats;
     }
 
     public function setGeneralShotsFg2aFrequency($stats)
     {
-        $this->generalShotsFg2aFrequency = $stats;
+        $this->generalShotData->Fg2aFrequency = $stats;
     }
 
     public function setGeneralShotsFg2m($stats)
     {
-        $this->generalShotsFg2m = $stats;
+        $this->generalShotData->Fg2m = $stats;
     }
 
     public function setGeneralShotsFg2a($stats)
     {
-        $this->generalShotsFg2a = $stats;
+        $this->generalShotData->Fg2a = $stats;
     }
 
     public function setGeneralShotsFg2Pct($stats)
     {
-        $this->generalShotsFg2Pct = $stats;
+        $this->generalShotData->Fg2Pct = $stats;
     }
 
     public function setGeneralShotsFg3aFrequency($stats)
     {
-        $this->generalShotsFg3aFrequency = $stats;
+        $this->generalShotData->Fg3aFrequency = $stats;
     }
 
     public function setGeneralShotsFg3m($stats)
     {
-        $this->generalshotsFg3m = $stats;
+        $this->generalShotData->Fg3m = $stats;
     }
 
     public function setGeneralShotsFg3a($stats)
     {
-        $this->generalShotsFg3a = $stats;
+        $this->generalShotData->Fg3a = $stats;
     }
 
     public function setGeneralShotsFg3Pct($stats)
     {
-        $this->generalShotsFg3Pct = $stats;
+        $this->generalShotData->Fg3Pct = $stats;
     }
 
     public function setGeneralCatchShootGamesPlayed($stats)
     {
-        $this->generalCatchShootGamesPlayed = $stats;
+        $this->generalCatchShoot->GamesPlayed = $stats;
     }
 
     public function setGeneralCatchShootGames($stats)
     {
-        $this->generalCatchShootGames = $stats;
+        $this->generalCatchShoot->Games = $stats;
     }
 
     public function setGeneralCatchShootFgaFrequency($stats)
     {
-        $this->generalCatchShootFgaFrequency = $stats;
+        $this->generalCatchShoot->FgaFrequency = $stats;
     }
 
     public function setGeneralCatchShootFgm($stats)
     {
-        $this->generalCatchShootFgm = $stats;
+        $this->generalCatchShoot->Fgm = $stats;
     }
 
     public function setGeneralCatchShootFga($stats)
     {
-        $this->generalCatchShootFga = $stats;
+        $this->generalCatchShoot->Fga = $stats;
     }
 
     public function setGeneralCatchShootFgPct($stats)
     {
-        $this->generalCatchShootFgPct = $stats;
+        $this->generalCatchShoot->FgPct = $stats;
     }
 
     public function setGeneralCatchShootEfgPct($stats)
     {
-        $this->generalCatchShootEfg = $stats;
+        $this->generalCatchShoot->Efg = $stats;
     }
 
     public function setGeneralCatchShootFg2aFrequency($stats)
     {
-        $this->generalCatchShootFg2aFrequency = $stats;
+        $this->generalCatchShoot->Fg2aFrequency = $stats;
     }
 
     public function setGeneralCatchShootFg2m($stats)
     {
-        $this->generalCatchShootFg2m = $stats;
+        $this->generalCatchShoot->Fg2m = $stats;
     }
 
     public function setGeneralCatchShootFg2a($stats)
     {
-        $this->generalCatchShootFg2a = $stats;
+        $this->generalCatchShoot->Fg2a = $stats;
     }
 
     public function setGeneralCatchShootFg2pct($stats)
     {
-        $this->generalCatchShootFg2pct = $stats;
+        $this->generalCatchShoot->Fg2pct = $stats;
     }
 
     public function setGeneralCatchShootFg3aFrequency($stats)
     {
-        $this->generalCatchShootFg3aFrequency = $stats;
+        $this->generalCatchShoot->Fg3aFrequency = $stats;
     }
 
     public function setGeneralCatchShootFg3m($stats)
     {
-        $this->generalCatchShootFg3m = $stats;
+        $this->generalCatchShoot->Fg3m = $stats;
     }
 
     public function setGeneralCatchShootFg3a($stats)
     {
-        $this->generalCatchShootFg3a = $stats;
+        $this->generalCatchShoot->Fg3a = $stats;
     }
 
     public function setGeneralCatchShootFg3Pct($stats)
     {
-        $this->generalCatchShootFg3Pct = $stats;
+        $this->generalCatchShoot->Fg3Pct = $stats;
     }
 
     public function setGeneralPullUpGamesPlayed($stats)
     {
-        $this->generalPullUpGamesPlayed = $stats;
+        $this->generalPullUp->GamesPlayed = $stats;
     }
 
     public function setGeneralPullUpGames($stats)
     {
-        $this->generalPullUpGames = $stats;
+        $this->generalPullUp->Games = $stats;
     }
 
     public function setGeneralPullUpFgaFrequency($stats)
     {
-        $this->generalPullUpFgaFrequency = $stats;
+        $this->generalPullUp->FgaFrequency = $stats;
     }
 
     public function setGeneralPullUpFgm($stats)
     {
-        $this->generalPullUpFgm = $stats;
+        $this->generalPullUp->Fgm = $stats;
     }
 
     public function setGeneralPullUpFga($stats)
     {
-        $this->generalPullUpFga = $stats;
+        $this->generalPullUp->Fga = $stats;
     }
 
     public function setGeneralPullUpFgPct($stats)
     {
-        $this->generalPullUpFgPct = $stats;
+        $this->generalPullUp->FgPct = $stats;
     }
 
     public function setGeneralPullUpEfgPct($stats)
     {
-        $this->generalPullUpEfg = $stats;
+        $this->generalPullUp->Efg = $stats;
     }
 
     public function setGeneralPullUpFg2aFrequency($stats)
     {
-        $this->generalPullUpFg2aFrequency = $stats;
+        $this->generalPullUp->Fg2aFrequency = $stats;
     }
 
     public function setGeneralPullUpFg2m($stats)
     {
-        $this->generalPullUpFg2m = $stats;
+        $this->generalPullUp->Fg2m = $stats;
     }
 
     public function setGeneralPullUpFg2a($stats)
     {
-        $this->generalPullUpFg2a = $stats;
+        $this->generalPullUp->Fg2a = $stats;
     }
 
     public function setGeneralPullUpFg2pct($stats)
     {
-        $this->generalPullUpFg2pct = $stats;
+        $this->generalPullUp->Fg2pct = $stats;
     }
 
     public function setGeneralPullUpFg3aFrequency($stats)
     {
-        $this->generalPullUpFg3aFrequency = $stats;
+        $this->generalPullUp->Fg3aFrequency = $stats;
     }
 
     public function setGeneralPullUpFg3m($stats)
     {
-        $this->generalPullUpFg3m = $stats;
+        $this->generalPullUp->Fg3m = $stats;
     }
 
     public function setGeneralPullUpFg3a($stats)
     {
-        $this->generalPullUpFg3a = $stats;
+        $this->generalPullUp->Fg3a = $stats;
     }
 
     public function setGeneralPullUpFg3Pct($stats)
     {
-        $this->generalPullUpFg3Pct = $stats;
+        $this->generalPullUp->Fg3Pct = $stats;
     }
 
     public function setGeneralLess10GamesPlayed($stats)
     {
-        $this->generalLess10GamesPlayed = $stats;
+        $this->generalLess10Ft->GamesPlayed = $stats;
     }
 
     public function setGeneralLess10Games($stats)
     {
-        $this->generalLess10Games = $stats;
+        $this->generalLess10Ft->Games = $stats;
     }
 
     public function setGeneralLess10FgaFrequency($stats)
     {
-        $this->generalLess10FgaFrequency = $stats;
+        $this->generalLess10Ft->FgaFrequency = $stats;
     }
 
     public function setGeneralLess10Fgm($stats)
     {
-        $this->generalLess10Fgm = $stats;
+        $this->generalLess10Ft->Fgm = $stats;
     }
 
     public function setGeneralLess10Fga($stats)
     {
-        $this->generalLess10Fga = $stats;
+        $this->generalLess10Ft->Fga = $stats;
     }
 
     public function setGeneralLess10FgPct($stats)
     {
-        $this->generalLess10FgPct = $stats;
+        $this->generalLess10Ft->FgPct = $stats;
     }
 
     public function setGeneralLess10EfgPct($stats)
     {
-        $this->generalLess10Efg = $stats;
+        $this->generalLess10Ft->Efg = $stats;
     }
 
     public function setGeneralLess10Fg2aFrequency($stats)
     {
-        $this->generalLess10Fg2aFrequency = $stats;
+        $this->generalLess10Ft->Fg2aFrequency = $stats;
     }
 
     public function setGeneralLess10Fg2m($stats)
     {
-        $this->generalLess10Fg2m = $stats;
+        $this->generalLess10Ft->Fg2m = $stats;
     }
 
     public function setGeneralLess10Fg2a($stats)
     {
-        $this->generalLess10Fg2a = $stats;
+        $this->generalLess10Ft->Fg2a = $stats;
     }
 
     public function setGeneralLess10Fg2pct($stats)
     {
-        $this->generalLess10Fg2pct = $stats;
+        $this->generalLess10Ft->Fg2pct = $stats;
     }
 
     public function setGeneralLess10Fg3aFrequency($stats)
     {
-        $this->generalLess10Fg3aFrequency = $stats;
+        $this->generalLess10Ft->Fg3aFrequency = $stats;
     }
 
     public function setGeneralLess10Fg3m($stats)
     {
-        $this->generalLess10Fg3m = $stats;
+        $this->generalLess10Ft->Fg3m = $stats;
     }
 
     public function setGeneralLess10Fg3a($stats)
     {
-        $this->generalLess10Fg3a = $stats;
+        $this->generalLess10Ft->Fg3a = $stats;
     }
 
     public function setGeneralLess10Fg3Pct($stats)
     {
-        $this->generalLess10Fg3Pct = $stats;
+        $this->generalLess10Ft->Fg3Pct = $stats;
     }
 
     public function setNoDribbleGamesPlayed($stats)
     {
-        $this->noDribbleGamesPlayed = $stats;
+        $this->noDribble->GamesPlayed = $stats;
     }
 
     public function setNoDribbleGames($stats)
     {
-        $this->noDribbleGames = $stats;
+        $this->noDribble->Games = $stats;
     }
 
     public function setNoDribbleFgaFrequency($stats)
     {
-        $this->noDribbleFgaFrequency = $stats;
+        $this->noDribble->FgaFrequency = $stats;
     }
 
     public function setNoDribbleFgm($stats)
     {
-        $this->noDribbleFgm = $stats;
+        $this->noDribble->Fgm = $stats;
     }
 
     public function setNoDribbleFga($stats)
     {
-        $this->noDribbleFga = $stats;
+        $this->noDribble->Fga = $stats;
     }
 
     public function setNoDribbleFgPct($stats)
     {
-        $this->noDribbleFgPct = $stats;
+        $this->noDribble->FgPct = $stats;
     }
 
     public function setNoDribbleEfgPct($stats)
     {
-        $this->noDribbleEfg = $stats;
+        $this->noDribble->Efg = $stats;
     }
 
     public function setNoDribbleFg2aFrequency($stats)
     {
-        $this->noDribbleFg2aFrequency = $stats;
+        $this->noDribble->Fg2aFrequency = $stats;
     }
 
     public function setNoDribbleFg2m($stats)
     {
-        $this->noDribbleFg2m = $stats;
+        $this->noDribble->Fg2m = $stats;
     }
 
     public function setNoDribbleFg2a($stats)
     {
-        $this->noDribbleFg2a = $stats;
+        $this->noDribble->Fg2a = $stats;
     }
 
     public function setNoDribbleFg2pct($stats)
     {
-        $this->noDribbleFg2pct = $stats;
+        $this->noDribble->Fg2pct = $stats;
     }
 
     public function setNoDribbleFg3aFrequency($stats)
     {
-        $this->noDribbleFg3aFrequency = $stats;
+        $this->noDribble->Fg3aFrequency = $stats;
     }
 
     public function setNoDribbleFg3m($stats)
     {
-        $this->noDribbleFg3m = $stats;
+        $this->noDribble->Fg3m = $stats;
     }
 
     public function setNoDribbleFg3a($stats)
     {
-        $this->noDribbleFg3a = $stats;
+        $this->noDribble->Fg3a = $stats;
     }
 
     public function setNoDribbleFg3Pct($stats)
     {
-        $this->noDribbleFg3Pct = $stats;
+        $this->noDribble->Fg3Pct = $stats;
     }
 
     public function setOneDribbleGamesPlayed($stats)
     {
-        $this->oneDribbleGamesPlayed = $stats;
+        $this->oneDribble->GamesPlayed = $stats;
     }
 
     public function setOneDribbleGames($stats)
     {
-        $this->oneDribbleGames = $stats;
+        $this->oneDribble->Games = $stats;
     }
 
     public function setOneDribbleFgaFrequency($stats)
     {
-        $this->oneDribbleFgaFrequency = $stats;
+        $this->oneDribble->FgaFrequency = $stats;
     }
 
     public function setOneDribbleFgm($stats)
     {
-        $this->oneDribbleFgm = $stats;
+        $this->oneDribble->Fgm = $stats;
     }
 
     public function setOneDribbleFga($stats)
     {
-        $this->oneDribbleFga = $stats;
+        $this->oneDribble->Fga = $stats;
     }
 
     public function setOneDribbleFgPct($stats)
     {
-        $this->oneDribbleFgPct = $stats;
+        $this->oneDribble->FgPct = $stats;
     }
 
     public function setOneDribbleEfgPct($stats)
     {
-        $this->oneDribbleEfg = $stats;
+        $this->oneDribble->Efg = $stats;
     }
 
     public function setOneDribbleFg2aFrequency($stats)
     {
-        $this->oneDribbleFg2aFrequency = $stats;
+        $this->oneDribble->Fg2aFrequency = $stats;
     }
 
     public function setOneDribbleFg2m($stats)
     {
-        $this->oneDribbleFg2m = $stats;
+        $this->oneDribble->Fg2m = $stats;
     }
 
     public function setOneDribbleFg2a($stats)
     {
-        $this->oneDribbleFg2a = $stats;
+        $this->oneDribble->Fg2a = $stats;
     }
 
     public function setOneDribbleFg2pct($stats)
     {
-        $this->oneDribbleFg2pct = $stats;
+        $this->oneDribble->Fg2pct = $stats;
     }
 
     public function setOneDribbleFg3aFrequency($stats)
     {
-        $this->oneDribbleFg3aFrequency = $stats;
+        $this->oneDribble->Fg3aFrequency = $stats;
     }
 
     public function setOneDribbleFg3m($stats)
     {
-        $this->oneDribbleFg3m = $stats;
+        $this->oneDribble->Fg3m = $stats;
     }
 
     public function setOneDribbleFg3a($stats)
     {
-        $this->oneDribbleFg3a = $stats;
+        $this->oneDribble->Fg3a = $stats;
     }
 
     public function setOneDribbleFg3Pct($stats)
     {
-        $this->oneDribbleFg3Pct = $stats;
+        $this->oneDribble->Fg3Pct = $stats;
     }
 
     public function setTwoDribbleGamesPlayed($stats)
     {
-        $this->twoDribbleGamesPlayed = $stats;
+        $this->twoDribble->GamesPlayed = $stats;
     }
 
     public function setTwoDribbleGames($stats)
     {
-        $this->twoDribbleGames = $stats;
+        $this->twoDribble->Games = $stats;
     }
 
     public function setTwoDribbleFgaFrequency($stats)
     {
-        $this->twoDribbleFgaFrequency = $stats;
+        $this->twoDribble->FgaFrequency = $stats;
     }
 
     public function setTwoDribbleFgm($stats)
     {
-        $this->twoDribbleFgm = $stats;
+        $this->twoDribble->Fgm = $stats;
     }
 
     public function setTwoDribbleFga($stats)
     {
-        $this->twoDribbleFga = $stats;
+        $this->twoDribble->Fga = $stats;
     }
 
     public function setTwoDribbleFgPct($stats)
     {
-        $this->twoDribbleFgPct = $stats;
+        $this->twoDribble->FgPct = $stats;
     }
 
     public function setTwoDribbleEfgPct($stats)
     {
-        $this->twoDribbleEfg = $stats;
+        $this->twoDribble->Efg = $stats;
     }
 
     public function setTwoDribbleFg2aFrequency($stats)
     {
-        $this->twoDribbleFg2aFrequency = $stats;
+        $this->twoDribble->Fg2aFrequency = $stats;
     }
 
     public function setTwoDribbleFg2m($stats)
     {
-        $this->twoDribbleFg2m = $stats;
+        $this->twoDribble->Fg2m = $stats;
     }
 
     public function setTwoDribbleFg2a($stats)
     {
-        $this->twoDribbleFg2a = $stats;
+        $this->twoDribble->Fg2a = $stats;
     }
 
     public function setTwoDribbleFg2pct($stats)
     {
-        $this->twoDribbleFg2pct = $stats;
+        $this->twoDribble->Fg2pct = $stats;
     }
 
     public function setTwoDribbleFg3aFrequency($stats)
     {
-        $this->twoDribbleFg3aFrequency = $stats;
+        $this->twoDribble->Fg3aFrequency = $stats;
     }
 
     public function setTwoDribbleFg3m($stats)
     {
-        $this->twoDribbleFg3m = $stats;
+        $this->twoDribble->Fg3m = $stats;
     }
 
     public function setTwoDribbleFg3a($stats)
     {
-        $this->twoDribbleFg3a = $stats;
+        $this->twoDribble->Fg3a = $stats;
     }
 
     public function setTwoDribbleFg3Pct($stats)
     {
-        $this->twoDribbleFg3Pct = $stats;
+        $this->twoDribble->Fg3Pct = $stats;
     }
 
     public function setThreeSixDribbleGamesPlayed($stats)
     {
-        $this->threeSixDribbleGamesPlayed = $stats;
+        $this->threeSixDribble->GamesPlayed = $stats;
     }
 
     public function setThreeSixDribbleGames($stats)
     {
-        $this->threeSixDribbleGames = $stats;
+        $this->threeSixDribble->Games = $stats;
     }
 
     public function setThreeSixDribbleFgaFrequency($stats)
     {
-        $this->threeSixDribbleFgaFrequency = $stats;
+        $this->threeSixDribble->FgaFrequency = $stats;
     }
 
     public function setThreeSixDribbleFgm($stats)
     {
-        $this->threeSixDribbleFgm = $stats;
+        $this->threeSixDribble->Fgm = $stats;
     }
 
     public function setThreeSixDribbleFga($stats)
     {
-        $this->threeSixDribbleFga = $stats;
+        $this->threeSixDribble->Fga = $stats;
     }
 
     public function setThreeSixDribbleFgPct($stats)
     {
-        $this->threeSixDribbleFgPct = $stats;
+        $this->threeSixDribble->FgPct = $stats;
     }
 
     public function setThreeSixDribbleEfgPct($stats)
     {
-        $this->threeSixDribbleEfg = $stats;
+        $this->threeSixDribble->Efg = $stats;
     }
 
     public function setThreeSixDribbleFg2aFrequency($stats)
     {
-        $this->threeSixDribbleFg2aFrequency = $stats;
+        $this->threeSixDribble->Fg2aFrequency = $stats;
     }
 
     public function setThreeSixDribbleFg2m($stats)
     {
-        $this->threeSixDribbleFg2m = $stats;
+        $this->threeSixDribble->Fg2m = $stats;
     }
 
     public function setThreeSixDribbleFg2a($stats)
     {
-        $this->threeSixDribbleFg2a = $stats;
+        $this->threeSixDribble->Fg2a = $stats;
     }
 
     public function setThreeSixDribbleFg2pct($stats)
     {
-        $this->threeSixDribbleFg2pct = $stats;
+        $this->threeSixDribble->Fg2pct = $stats;
     }
 
     public function setThreeSixDribbleFg3aFrequency($stats)
     {
-        $this->threeSixDribbleFg3aFrequency = $stats;
+        $this->threeSixDribble->Fg3aFrequency = $stats;
     }
 
     public function setThreeSixDribbleFg3m($stats)
     {
-        $this->threeSixDribbleFg3m = $stats;
+        $this->threeSixDribble->Fg3m = $stats;
     }
 
     public function setThreeSixDribbleFg3a($stats)
     {
-        $this->threeSixDribbleFg3a = $stats;
+        $this->threeSixDribble->Fg3a = $stats;
     }
 
     public function setThreeSixDribbleFg3Pct($stats)
     {
-        $this->threeSixDribbleFg3Pct = $stats;
+        $this->threeSixDribble->Fg3Pct = $stats;
     }
 
     public function setSevenDribbleGamesPlayed($stats)
     {
-        $this->sevenDribbleGamesPlayed = $stats;
+        $this->sevenDribble->GamesPlayed = $stats;
     }
 
     public function setSevenDribbleGames($stats)
     {
-        $this->sevenDribbleGames = $stats;
+        $this->sevenDribble->Games = $stats;
     }
 
     public function setSevenDribbleFgaFrequency($stats)
     {
-        $this->sevenDribbleFgaFrequency = $stats;
+        $this->sevenDribble->FgaFrequency = $stats;
     }
 
     public function setSevenDribbleFgm($stats)
     {
-        $this->sevenDribbleFgm = $stats;
+        $this->sevenDribble->Fgm = $stats;
     }
 
     public function setSevenDribbleFga($stats)
     {
-        $this->sevenDribbleFga = $stats;
+        $this->sevenDribble->Fga = $stats;
     }
 
     public function setSevenDribbleFgPct($stats)
     {
-        $this->sevenDribbleFgPct = $stats;
+        $this->sevenDribble->FgPct = $stats;
     }
 
     public function setSevenDribbleEfgPct($stats)
     {
-        $this->sevenDribbleEfg = $stats;
+        $this->sevenDribble->Efg = $stats;
     }
 
     public function setSevenDribbleFg2aFrequency($stats)
     {
-        $this->sevenDribbleFg2aFrequency = $stats;
+        $this->sevenDribble->Fg2aFrequency = $stats;
     }
 
     public function setSevenDribbleFg2m($stats)
     {
-        $this->sevenDribbleFg2m = $stats;
+        $this->sevenDribble->Fg2m = $stats;
     }
 
     public function setSevenDribbleFg2a($stats)
     {
-        $this->sevenDribbleFg2a = $stats;
+        $this->sevenDribble->Fg2a = $stats;
     }
 
     public function setSevenDribbleFg2pct($stats)
     {
-        $this->sevenDribbleFg2pct = $stats;
+        $this->sevenDribble->Fg2pct = $stats;
     }
 
     public function setSevenDribbleFg3aFrequency($stats)
     {
-        $this->sevenDribbleFg3aFrequency = $stats;
+        $this->sevenDribble->Fg3aFrequency = $stats;
     }
 
     public function setSevenDribbleFg3m($stats)
     {
-        $this->sevenDribbleFg3m = $stats;
+        $this->sevenDribble->Fg3m = $stats;
     }
 
     public function setSevenDribbleFg3a($stats)
     {
-        $this->sevenDribbleFg3a = $stats;
+        $this->sevenDribble->Fg3a = $stats;
     }
 
     public function setSevenDribbleFg3Pct($stats)
     {
-        $this->sevenDribbleFg3Pct = $stats;
+        $this->sevenDribble->Fg3Pct = $stats;
     }
 
     public function setClosestDefenderVeryTightRange($stats)
     {
-        $this->closestDefenderVeryTightRange = $stats;
+        $this->closestDefenderVeryTight->Range = $stats;
     }
 
     public function setClosestDefenderVeryTightGamesPlayed($stats)
     {
-        $this->closestDefenderVeryTightGamesPlayed = $stats;
+        $this->closestDefenderVeryTight->GamesPlayed = $stats;
     }
 
     public function setClosestDefenderVeryTightGames($stats)
     {
-        $this->closestDefenderVeryTightGames = $stats;
+        $this->closestDefenderVeryTight->Games = $stats;
     }
 
     public function setClosestDefenderVeryTightFgaFrequency($stats)
     {
-        $this->closestDefenderVeryTightFgaFrequency = $stats;
+        $this->closestDefenderVeryTight->FgaFrequency = $stats;
     }
 
     public function setClosestDefenderVeryTightFgm($stats)
     {
-        $this->closestDefenderVeryTightFgm = $stats;
+        $this->closestDefenderVeryTight->Fgm = $stats;
     }
 
     public function setClosestDefenderVeryTightFga($stats)
     {
-        $this->closestDefenderVeryTightFga = $stats;
+        $this->closestDefenderVeryTight->Fga = $stats;
     }
 
     public function setClosestDefenderVeryTightFgPct($stats)
     {
-        $this->closestDefenderVeryTightFgPct = $stats;
+        $this->closestDefenderVeryTight->FgPct = $stats;
     }
 
     public function setClosestDefenderVeryTightEfgPct($stats)
     {
-        $this->closestDefenderVeryTightEfgPct = $stats;
+        $this->closestDefenderVeryTight->EfgPct = $stats;
     }
 
     public function setClosestDefenderVeryTightFg2aFrequency($stats)
     {
-        $this->closestDefenderVeryTightFg2aFrequency = $stats;
+        $this->closestDefenderVeryTight->Fg2aFrequency = $stats;
     }
 
     public function setClosestDefenderVeryTightFg2m($stats)
     {
-        $this->closestDefenderVeryTightFg2m = $stats;
+        $this->closestDefenderVeryTight->Fg2m = $stats;
     }
 
     public function setClosestDefenderVeryTightFg2a($stats)
     {
-        $this->closestDefenderVeryTightFg2a = $stats;
+        $this->closestDefenderVeryTight->Fg2a = $stats;
     }
 
     public function setClosestDefenderVeryTightFg2Pct($stats)
     {
-        $this->closestDefenderVeryTightFg2Pct = $stats;
+        $this->closestDefenderVeryTight->Fg2Pct = $stats;
     }
 
     public function setClosestDefenderVeryTightFg3aFrequency($stats)
     {
-        $this->closestDefenderVeryTightFg3aFrequency = $stats;
+        $this->closestDefenderVeryTight->Fg3aFrequency = $stats;
     }
 
     public function setClosestDefenderVeryTightFg3m($stats)
     {
-        $this->closestDefenderVeryTightFg3m = $stats;
+        $this->closestDefenderVeryTight->Fg3m = $stats;
     }
 
     public function setClosestDefenderVeryTightFg3a($stats)
     {
-        $this->closestDefenderVeryTightFg3a = $stats;
+        $this->closestDefenderVeryTight->Fg3a = $stats;
     }
 
     public function setClosestDefenderVeryTightFg3Pct($stats)
     {
-        $this->closestDefenderVeryTightFg3Pct = $stats;
+        $this->closestDefenderVeryTight->Fg3Pct = $stats;
     }
 
     public function setClosestDefenderTightRange($stats)
     {
-        $this->closestDefenderTightRange = $stats;
+        $this->closestDefenderTight->Range = $stats;
     }
 
     public function setClosestDefenderTightGamesPlayed($stats)
     {
-        $this->closestDefenderTightGamesPlayed = $stats;
+        $this->closestDefenderTight->GamesPlayed = $stats;
     }
 
     public function setClosestDefenderTightGames($stats)
     {
-        $this->closestDefenderTightGames = $stats;
+        $this->closestDefenderTight->Games = $stats;
     }
 
     public function setClosestDefenderTightFgaFrequency($stats)
     {
-        $this->closestDefenderTightFgaFrequency = $stats;
+        $this->closestDefenderTight->FgaFrequency = $stats;
     }
 
     public function setClosestDefenderTightFgm($stats)
     {
-        $this->closestDefenderTightFgm = $stats;
+        $this->closestDefenderTight->Fgm = $stats;
     }
 
     public function setClosestDefenderTightFga($stats)
     {
-        $this->closestDefenderTightFga = $stats;
+        $this->closestDefenderTight->Fga = $stats;
     }
 
     public function setClosestDefenderTightFgPct($stats)
     {
-        $this->closestDefenderTightFgPct = $stats;
+        $this->closestDefenderTight->FgPct = $stats;
     }
 
     public function setClosestDefenderTightEfgPct($stats)
     {
-        $this->closestDefenderTightEfgPct = $stats;
+        $this->closestDefenderTight->EfgPct = $stats;
     }
 
     public function setClosestDefenderTightFg2aFrequency($stats)
     {
-        $this->closestDefenderTightFg2aFrequency = $stats;
+        $this->closestDefenderTight->Fg2aFrequency = $stats;
     }
 
     public function setClosestDefenderTightFg2m($stats)
     {
-        $this->closestDefenderTightFg2m = $stats;
+        $this->closestDefenderTight->Fg2m = $stats;
     }
 
     public function setClosestDefenderTightFg2a($stats)
     {
-        $this->closestDefenderTightFg2a = $stats;
+        $this->closestDefenderTight->Fg2a = $stats;
     }
 
     public function setClosestDefenderTightFg2Pct($stats)
     {
-        $this->closestDefenderTightFg2Pct = $stats;
+        $this->closestDefenderTight->Fg2Pct = $stats;
     }
 
     public function setClosestDefenderTightFg3aFrequency($stats)
     {
-        $this->closestDefenderTightFg3aFrequency = $stats;
+        $this->closestDefenderTight->Fg3aFrequency = $stats;
     }
 
     public function setClosestDefenderTightFg3m($stats)
     {
-        $this->closestDefenderTightFg3m = $stats;
+        $this->closestDefenderTight->Fg3m = $stats;
     }
 
     public function setClosestDefenderTightFg3a($stats)
     {
-        $this->closestDefenderTightFg3a = $stats;
+        $this->closestDefenderTight->Fg3a = $stats;
     }
 
     public function setClosestDefenderTightFg3Pct($stats)
     {
-        $this->closestDefenderTightFg3Pct = $stats;
+        $this->closestDefenderTight->Fg3Pct = $stats;
     }
 
     public function setClosestDefenderOpenRange($stats)
     {
-        $this->closestDefenderOpenRange = $stats;
+        $this->closestDefenderOpen->Range = $stats;
     }
 
     public function setClosestDefenderOpenGamesPlayed($stats)
     {
-        $this->closestDefenderOpenGamesPlayed = $stats;
+        $this->closestDefenderOpen->GamesPlayed = $stats;
     }
 
     public function setClosestDefenderOpenGames($stats)
     {
-        $this->closestDefenderOpenGames = $stats;
+        $this->closestDefenderOpen->Games = $stats;
     }
 
     public function setClosestDefenderOpenFgaFrequency($stats)
     {
-        $this->closestDefenderOpenFgaFrequency = $stats;
+        $this->closestDefenderOpen->FgaFrequency = $stats;
     }
 
     public function setClosestDefenderOpenFgm($stats)
     {
-        $this->closestDefenderOpenFgm = $stats;
+        $this->closestDefenderOpen->Fgm = $stats;
     }
 
     public function setClosestDefenderOpenFga($stats)
     {
-        $this->closestDefenderOpenFga = $stats;
+        $this->closestDefenderOpen->Fga = $stats;
     }
 
     public function setClosestDefenderOpenFgPct($stats)
     {
-        $this->closestDefenderOpenFgPct = $stats;
+        $this->closestDefenderOpen->FgPct = $stats;
     }
 
     public function setClosestDefenderOpenEfgPct($stats)
     {
-        $this->closestDefenderOpenEfgPct = $stats;
+        $this->closestDefenderOpen->EfgPct = $stats;
     }
 
     public function setClosestDefenderOpenFg2aFrequency($stats)
     {
-        $this->closestDefenderOpenFg2aFrequency = $stats;
+        $this->closestDefenderOpen->Fg2aFrequency = $stats;
     }
 
     public function setClosestDefenderOpenFg2m($stats)
     {
-        $this->closestDefenderOpenFg2m = $stats;
+        $this->closestDefenderOpen->Fg2m = $stats;
     }
 
     public function setClosestDefenderOpenFg2a($stats)
     {
-        $this->closestDefenderOpenFg2a = $stats;
+        $this->closestDefenderOpen->Fg2a = $stats;
     }
 
     public function setClosestDefenderOpenFg2Pct($stats)
     {
-        $this->closestDefenderOpenFg2Pct = $stats;
+        $this->closestDefenderOpen->Fg2Pct = $stats;
     }
 
     public function setClosestDefenderOpenFg3aFrequency($stats)
     {
-        $this->closestDefenderOpenFg3aFrequency = $stats;
+        $this->closestDefenderOpen->Fg3aFrequency = $stats;
     }
 
     public function setClosestDefenderOpenFg3m($stats)
     {
-        $this->closestDefenderOpenFg3m = $stats;
+        $this->closestDefenderOpen->Fg3m = $stats;
     }
 
     public function setClosestDefenderOpenFg3a($stats)
     {
-        $this->closestDefenderOpenFg3a = $stats;
+        $this->closestDefenderOpen->Fg3a = $stats;
     }
 
     public function setClosestDefenderOpenFg3Pct($stats)
     {
-        $this->closestDefenderOpenFg3Pct = $stats;
+        $this->closestDefenderOpen->Fg3Pct = $stats;
     }
 
     public function setClosestDefenderVeryOpenRange($stats)
     {
-        $this->closestDefenderVeryOpenRange = $stats;
+        $this->closestDefenderVeryOpen->Range = $stats;
     }
 
     public function setClosestDefenderVeryOpenGamesPlayed($stats)
     {
-        $this->closestDefenderVeryOpenGamesPlayed = $stats;
+        $this->closestDefenderVeryOpen->GamesPlayed = $stats;
     }
 
     public function setClosestDefenderVeryOpenGames($stats)
     {
-        $this->closestDefenderVeryOpenGames = $stats;
+        $this->closestDefenderVeryOpen->Games = $stats;
     }
 
     public function setClosestDefenderVeryOpenFgaFrequency($stats)
     {
-        $this->closestDefenderVeryOpenFgaFrequency = $stats;
+        $this->closestDefenderVeryOpen->FgaFrequency = $stats;
     }
 
     public function setClosestDefenderVeryOpenFgm($stats)
     {
-        $this->closestDefenderVeryOpenFgm = $stats;
+        $this->closestDefenderVeryOpen->Fgm = $stats;
     }
 
     public function setClosestDefenderVeryOpenFga($stats)
     {
-        $this->closestDefenderVeryOpenFga = $stats;
+        $this->closestDefenderVeryOpen->Fga = $stats;
     }
 
     public function setClosestDefenderVeryOpenFgPct($stats)
     {
-        $this->closestDefenderVeryOpenFgPct = $stats;
+        $this->closestDefenderVeryOpen->FgPct = $stats;
     }
 
     public function setClosestDefenderVeryOpenEfgPct($stats)
     {
-        $this->closestDefenderVeryOpenEfgPct = $stats;
+        $this->closestDefenderVeryOpen->EfgPct = $stats;
     }
 
     public function setClosestDefenderVeryOpenFg2aFrequency($stats)
     {
-        $this->closestDefenderVeryOpenFg2aFrequency = $stats;
+        $this->closestDefenderVeryOpen->Fg2aFrequency = $stats;
     }
 
     public function setClosestDefenderVeryOpenFg2m($stats)
     {
-        $this->closestDefenderVeryOpenFg2m = $stats;
+        $this->closestDefenderVeryOpen->Fg2m = $stats;
     }
 
     public function setClosestDefenderVeryOpenFg2a($stats)
     {
-        $this->closestDefenderVeryOpenFg2a = $stats;
+        $this->closestDefenderVeryOpen->Fg2a = $stats;
     }
 
     public function setClosestDefenderVeryOpenFg2Pct($stats)
     {
-        $this->closestDefenderVeryOpenFg2Pct = $stats;
+        $this->closestDefenderVeryOpen->Fg2Pct = $stats;
     }
 
     public function setClosestDefenderVeryOpenFg3aFrequency($stats)
     {
-        $this->closestDefenderVeryOpenFg3aFrequency = $stats;
+        $this->closestDefenderVeryOpen->Fg3aFrequency = $stats;
     }
 
     public function setClosestDefenderVeryOpenFg3m($stats)
     {
-        $this->closestDefenderVeryOpenFg3m = $stats;
+        $this->closestDefenderVeryOpen->Fg3m = $stats;
     }
 
     public function setClosestDefenderVeryOpenFg3a($stats)
     {
-        $this->closestDefenderVeryOpenFg3a = $stats;
+        $this->closestDefenderVeryOpen->Fg3a = $stats;
     }
 
     public function setClosestDefenderVeryOpenFg3Pct($stats)
     {
-        $this->closestDefenderVeryOpenFg3Pct = $stats;
+        $this->closestDefenderVeryOpen->Fg3Pct = $stats;
+    }
+
+    public function setClosestDefender10PlusVeryTightRange($stats)
+    {
+        $this->closestDefender10PlusVeryTight->Range = $stats;
+    }
+
+    public function setClosestDefender10PlusVeryTightGamesPlayed($stats)
+    {
+        $this->closestDefender10PlusVeryTight->GamesPlayed = $stats;
+    }
+
+    public function setClosestDefender10PlusVeryTightGames($stats)
+    {
+        $this->closestDefender10PlusVeryTight->Games = $stats;
+    }
+
+    public function setClosestDefender10PlusVeryTightFgaFrequency($stats)
+    {
+        $this->closestDefender10PlusVeryTight->FgaFrequency = $stats;
+    }
+
+    public function setClosestDefender10PlusVeryTightFgm($stats)
+    {
+        $this->closestDefender10PlusVeryTight->Fgm = $stats;
+    }
+
+    public function setClosestDefender10PlusVeryTightFga($stats)
+    {
+        $this->closestDefender10PlusVeryTight->Fga = $stats;
+    }
+
+    public function setClosestDefender10PlusVeryTightFgPct($stats)
+    {
+        $this->closestDefender10PlusVeryTight->FgPct = $stats;
+    }
+
+    public function setClosestDefender10PlusVeryTightEfgPct($stats)
+    {
+        $this->closestDefender10PlusVeryTight->EfgPct = $stats;
+    }
+
+    public function setClosestDefender10PlusVeryTightFg2aFrequency($stats)
+    {
+        $this->closestDefender10PlusVeryTight->Fg2aFrequency = $stats;
+    }
+
+    public function setClosestDefender10PlusVeryTightFg2m($stats)
+    {
+        $this->closestDefender10PlusVeryTight->Fg2m = $stats;
+    }
+
+    public function setClosestDefender10PlusVeryTightFg2a($stats)
+    {
+        $this->closestDefender10PlusVeryTight->Fg2a = $stats;
+    }
+
+    public function setClosestDefender10PlusVeryTightFg2Pct($stats)
+    {
+        $this->closestDefender10PlusVeryTight->Fg2Pct = $stats;
+    }
+
+    public function setClosestDefender10PlusVeryTightFg3aFrequency($stats)
+    {
+        $this->closestDefender10PlusVeryTight->Fg3aFrequency = $stats;
+    }
+
+    public function setClosestDefender10PlusVeryTightFg3m($stats)
+    {
+        $this->closestDefender10PlusVeryTight->Fg3m = $stats;
+    }
+
+    public function setClosestDefender10PlusVeryTightFg3a($stats)
+    {
+        $this->closestDefender10PlusVeryTight->Fg3a = $stats;
+    }
+
+    public function setClosestDefender10PlusVeryTightFg3Pct($stats)
+    {
+        $this->closestDefender10PlusVeryTight->Fg3Pct = $stats;
+    }
+
+    public function setClosestDefender10PlusTightRange($stats)
+    {
+        $this->closestDefender10PlusTight->Range = $stats;
+    }
+
+    public function setClosestDefender10PlusTightGamesPlayed($stats)
+    {
+        $this->closestDefender10PlusTight->GamesPlayed = $stats;
+    }
+
+    public function setClosestDefender10PlusTightGames($stats)
+    {
+        $this->closestDefender10PlusTight->Games = $stats;
+    }
+
+    public function setClosestDefender10PlusTightFgaFrequency($stats)
+    {
+        $this->closestDefender10PlusTight->FgaFrequency = $stats;
+    }
+
+    public function setClosestDefender10PlusTightFgm($stats)
+    {
+        $this->closestDefender10PlusTight->Fgm = $stats;
+    }
+
+    public function setClosestDefender10PlusTightFga($stats)
+    {
+        $this->closestDefender10PlusTight->Fga = $stats;
+    }
+
+    public function setClosestDefender10PlusTightFgPct($stats)
+    {
+        $this->closestDefender10PlusTight->FgPct = $stats;
+    }
+
+    public function setClosestDefender10PlusTightEfgPct($stats)
+    {
+        $this->closestDefender10PlusTight->EfgPct = $stats;
+    }
+
+    public function setClosestDefender10PlusTightFg2aFrequency($stats)
+    {
+        $this->closestDefender10PlusTight->Fg2aFrequency = $stats;
+    }
+
+    public function setClosestDefender10PlusTightFg2m($stats)
+    {
+        $this->closestDefender10PlusTight->Fg2m = $stats;
+    }
+
+    public function setClosestDefender10PlusTightFg2a($stats)
+    {
+        $this->closestDefender10PlusTight->Fg2a = $stats;
+    }
+
+    public function setClosestDefender10PlusTightFg2Pct($stats)
+    {
+        $this->closestDefender10PlusTight->Fg2Pct = $stats;
+    }
+
+    public function setClosestDefender10PlusTightFg3aFrequency($stats)
+    {
+        $this->closestDefender10PlusTight->Fg3aFrequency = $stats;
+    }
+
+    public function setClosestDefender10PlusTightFg3m($stats)
+    {
+        $this->closestDefender10PlusTight->Fg3m = $stats;
+    }
+
+    public function setClosestDefender10PlusTightFg3a($stats)
+    {
+        $this->closestDefender10PlusTight->Fg3a = $stats;
+    }
+
+    public function setClosestDefender10PlusTightFg3Pct($stats)
+    {
+        $this->closestDefender10PlusTight->Fg3Pct = $stats;
+    }
+
+    public function setClosestDefender10PlusOpenRange($stats)
+    {
+        $this->closestDefender10PlusOpen->Range = $stats;
+    }
+
+    public function setClosestDefender10PlusOpenGamesPlayed($stats)
+    {
+        $this->closestDefender10PlusOpen->GamesPlayed = $stats;
+    }
+
+    public function setClosestDefender10PlusOpenGames($stats)
+    {
+        $this->closestDefender10PlusOpen->Games = $stats;
+    }
+
+    public function setClosestDefender10PlusOpenFgaFrequency($stats)
+    {
+        $this->closestDefender10PlusOpen->FgaFrequency = $stats;
+    }
+
+    public function setClosestDefender10PlusOpenFgm($stats)
+    {
+        $this->closestDefender10PlusOpen->Fgm = $stats;
+    }
+
+    public function setClosestDefender10PlusOpenFga($stats)
+    {
+        $this->closestDefender10PlusOpen->Fga = $stats;
+    }
+
+    public function setClosestDefender10PlusOpenFgPct($stats)
+    {
+        $this->closestDefender10PlusOpen->FgPct = $stats;
+    }
+
+    public function setClosestDefender10PlusOpenEfgPct($stats)
+    {
+        $this->closestDefender10PlusOpen->EfgPct = $stats;
+    }
+
+    public function setClosestDefender10PlusOpenFg2aFrequency($stats)
+    {
+        $this->closestDefender10PlusOpen->Fg2aFrequency = $stats;
+    }
+
+    public function setClosestDefender10PlusOpenFg2m($stats)
+    {
+        $this->closestDefender10PlusOpen->Fg2m = $stats;
+    }
+
+    public function setClosestDefender10PlusOpenFg2a($stats)
+    {
+        $this->closestDefender10PlusOpen->Fg2a = $stats;
+    }
+
+    public function setClosestDefender10PlusOpenFg2Pct($stats)
+    {
+        $this->closestDefender10PlusOpen->Fg2Pct = $stats;
+    }
+
+    public function setClosestDefender10PlusOpenFg3aFrequency($stats)
+    {
+        $this->closestDefender10PlusOpen->Fg3aFrequency = $stats;
+    }
+
+    public function setClosestDefender10PlusOpenFg3m($stats)
+    {
+        $this->closestDefender10PlusOpen->Fg3m = $stats;
+    }
+
+    public function setClosestDefender10PlusOpenFg3a($stats)
+    {
+        $this->closestDefender10PlusOpen->Fg3a = $stats;
+    }
+
+    public function setClosestDefender10PlusOpenFg3Pct($stats)
+    {
+        $this->closestDefender10PlusOpen->Fg3Pct = $stats;
+    }
+
+    public function setClosestDefender10PlusVeryOpenRange($stats)
+    {
+        $this->closestDefender10PlusVeryOpen->Range = $stats;
+    }
+
+    public function setClosestDefender10PlusVeryOpenGamesPlayed($stats)
+    {
+        $this->closestDefender10PlusVeryOpen->GamesPlayed = $stats;
+    }
+
+    public function setClosestDefender10PlusVeryOpenGames($stats)
+    {
+        $this->closestDefender10PlusVeryOpen->Games = $stats;
+    }
+
+    public function setClosestDefender10PlusVeryOpenFgaFrequency($stats)
+    {
+        $this->closestDefender10PlusVeryOpen->FgaFrequency = $stats;
+    }
+
+    public function setClosestDefender10PlusVeryOpenFgm($stats)
+    {
+        $this->closestDefender10PlusVeryOpen->Fgm = $stats;
+    }
+
+    public function setClosestDefender10PlusVeryOpenFga($stats)
+    {
+        $this->closestDefender10PlusVeryOpen->Fga = $stats;
+    }
+
+    public function setClosestDefender10PlusVeryOpenFgPct($stats)
+    {
+        $this->closestDefender10PlusVeryOpen->FgPct = $stats;
+    }
+
+    public function setClosestDefender10PlusVeryOpenEfgPct($stats)
+    {
+        $this->closestDefender10PlusVeryOpen->EfgPct = $stats;
+    }
+
+    public function setClosestDefender10PlusVeryOpenFg2aFrequency($stats)
+    {
+        $this->closestDefender10PlusVeryOpen->Fg2aFrequency = $stats;
+    }
+
+    public function setClosestDefender10PlusVeryOpenFg2m($stats)
+    {
+        $this->closestDefender10PlusVeryOpen->Fg2m = $stats;
+    }
+
+    public function setClosestDefender10PlusVeryOpenFg2a($stats)
+    {
+        $this->closestDefender10PlusVeryOpen->Fg2a = $stats;
+    }
+
+    public function setClosestDefender10PlusVeryOpenFg2Pct($stats)
+    {
+        $this->closestDefender10PlusVeryOpen->Fg2Pct = $stats;
+    }
+
+    public function setClosestDefender10PlusVeryOpenFg3aFrequency($stats)
+    {
+        $this->closestDefender10PlusVeryOpen->Fg3aFrequency = $stats;
+    }
+
+    public function setClosestDefender10PlusVeryOpenFg3m($stats)
+    {
+        $this->closestDefender10PlusVeryOpen->Fg3m = $stats;
+    }
+
+    public function setClosestDefender10PlusVeryOpenFg3a($stats)
+    {
+        $this->closestDefender10PlusVeryOpen->Fg3a = $stats;
+    }
+
+    public function setClosestDefender10PlusVeryOpenFg3Pct($stats)
+    {
+        $this->closestDefender10PlusVeryOpen->Fg3Pct = $stats;
+    }
+
+    public function setOverallReboundingFrequency($stat)
+    {
+        $this->overallRebounding->frequency = $stat;
+    }
+
+    public function setOverallReboundingOreb($stat)
+    {
+        $this->overallRebounding->oreb = $stat;
+    }
+
+    public function setOverallReboundingDreb($stat)
+    {
+        $this->overallRebounding->dreb = $stat;
+    }
+
+    public function setOverallReboundingReb($stat)
+    {
+        $this->overallRebounding->reb = $stat;
+    }
+
+    public function setOverallReboundingContestedOreb($stat)
+    {
+        $this->overallRebounding->contestedOreb = $stat;
+    }
+
+    public function setOverallReboundingContestedDreb($stat)
+    {
+        $this->overallRebounding->contestedDreb = $stat;
+    }
+
+    public function setOverallReboundingContestedReb($stat)
+    {
+        $this->overallRebounding->contestedReb = $stat;
+    }
+
+    public function setOverallReboundingContestedRebPct($stat)
+    {
+        $this->overallRebounding->contestedRebPct = $stat;
+    }
+
+    public function setOverallReboundingUncontestedOreb($stat)
+    {
+        $this->overallRebounding->uncontestedOreb = $stat;
+    }
+
+    public function setOverallReboundingUncontestedDreb($stat)
+    {
+        $this->overallRebounding->uncontestedDreb = $stat;
+    }
+
+    public function setOverallReboundingUncontestedReb($stat)
+    {
+        $this->overallRebounding->uncontestedReb = $stat;
+    }
+
+    public function setOverallReboundingUncontestedRebPct($stat)
+    {
+        $this->overallRebounding->uncontestedRebPct = $stat;
+    }
+
+    public function set2ptMissReboundingFrequency($stat)
+    {
+        $this->rebounding2ptMiss->frequency = $stat;
+    }
+
+    public function set2ptMissReboundingOreb($stat)
+    {
+        $this->rebounding2ptMiss->oreb = $stat;
+    }
+
+    public function set2ptMissReboundingDreb($stat)
+    {
+        $this->rebounding2ptMiss->dreb = $stat;
+    }
+
+    public function set2ptMissReboundingReb($stat)
+    {
+        $this->rebounding2ptMiss->reb = $stat;
+    }
+
+    public function set2ptMissReboundingContestedOreb($stat)
+    {
+        $this->rebounding2ptMiss->contestedOreb = $stat;
+    }
+
+    public function set2ptMissReboundingContestedDreb($stat)
+    {
+        $this->rebounding2ptMiss->contestedDreb = $stat;
+    }
+
+    public function set2ptMissReboundingContestedReb($stat)
+    {
+        $this->rebounding2ptMiss->contestedReb = $stat;
+    }
+
+    public function set2ptMissReboundingContestedRebPct($stat)
+    {
+        $this->rebounding2ptMiss->contestedRebPct = $stat;
+    }
+
+    public function set2ptMissReboundingUncontestedOreb($stat)
+    {
+        $this->rebounding2ptMiss->uncontestedOreb = $stat;
+    }
+
+    public function set2ptMissReboundingUncontestedDreb($stat)
+    {
+        $this->rebounding2ptMiss->uncontestedDreb = $stat;
+    }
+
+    public function set2ptMissReboundingUncontestedReb($stat)
+    {
+        $this->rebounding2ptMiss->uncontestedReb = $stat;
+    }
+
+    public function set2ptMissReboundingUncontestedRebPct($stat)
+    {
+        $this->rebounding2ptMiss->uncontestedRebPct = $stat;
+    }
+
+    public function set3ptMissReboundingFrequency($stat)
+    {
+        $this->rebounding3ptMiss->frequency = $stat;
+    }
+
+    public function set3ptMissReboundingOreb($stat)
+    {
+        $this->rebounding3ptMiss->oreb = $stat;
+    }
+
+    public function set3ptMissReboundingDreb($stat)
+    {
+        $this->rebounding3ptMiss->dreb = $stat;
+    }
+
+    public function set3ptMissReboundingReb($stat)
+    {
+        $this->rebounding3ptMiss->reb = $stat;
+    }
+
+    public function set3ptMissReboundingContestedOreb($stat)
+    {
+        $this->rebounding3ptMiss->contestedOreb = $stat;
+    }
+
+    public function set3ptMissReboundingContestedDreb($stat)
+    {
+        $this->rebounding3ptMiss->contestedDreb = $stat;
+    }
+
+    public function set3ptMissReboundingContestedReb($stat)
+    {
+        $this->rebounding3ptMiss->contestedReb = $stat;
+    }
+
+    public function set3ptMissReboundingContestedRebPct($stat)
+    {
+        $this->rebounding3ptMiss->contestedRebPct = $stat;
+    }
+
+    public function set3ptMissReboundingUncontestedOreb($stat)
+    {
+        $this->rebounding3ptMiss->uncontestedOreb = $stat;
+    }
+
+    public function set3ptMissReboundingUncontestedDreb($stat)
+    {
+        $this->rebounding3ptMiss->uncontestedDreb = $stat;
+    }
+
+    public function set3ptMissReboundingUncontestedReb($stat)
+    {
+        $this->rebounding3ptMiss->uncontestedReb = $stat;
+    }
+
+    public function set3ptMissReboundingUncontestedRebPct($stat)
+    {
+        $this->rebounding3ptMiss->uncontestedRebPct = $stat;
     }
 
 }

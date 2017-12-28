@@ -10,12 +10,10 @@
         
     </head>
     <body>
+        {{ dd($data) }}
         <div id="app">
-            {{ dd($data) }}
+            <basic-info :stats="{{ $data }}"></basic-info>
         </div>
-
-    
-        
 
         <script src="{{ asset('js/app.js') }}"></script>
     </body>
