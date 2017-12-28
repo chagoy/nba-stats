@@ -10,9 +10,15 @@
         
     </head>
     <body>
-        {{ dd($data) }}
+        
         <div id="app">
-            <basic-info :stats="{{ $data }}"></basic-info>
+            <form action="/lineup" method="GET">
+            
+            <select name="" id="">
+
+            </select>
+
+            </form>  
         </div>
 
         <script src="{{ asset('js/app.js') }}"></script>

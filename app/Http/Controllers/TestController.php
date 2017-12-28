@@ -15,6 +15,8 @@ class TestController extends Controller
     public function index()
     {
        
+
+       return view('welcome', compact('players'));
     }
 
     public function show(Player $player)
